@@ -1,9 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.scss'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -14,8 +10,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-
+      <main className={styles.main}>
+        <div className={styles.content}>
+          <img src='./../assets/images/ty-lue.jpg' alt='ty lue stupid ass head' />
+          <h1 className='title'>hi, i'm ruddel</h1>
+          <p className='flavour-text'>Sorry, but there's not a whole lot happening here just yet. Come back later!</p>
+        </div>
       </main>
     </>
   )
