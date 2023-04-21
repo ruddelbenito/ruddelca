@@ -15,8 +15,8 @@ export default function Home() {
           <h1 className={styles.title}>hi, i'm ruddel</h1>
 
           <img
-            src='./images/ty-lue.jpg'
-            alt='ty lue stupid ass face'
+            src='./images/saul.gif'
+            alt='slippin jimmy'
             className={styles.image}
           />
 
