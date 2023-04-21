@@ -1,7 +1,53 @@
-:root {
-    background-color: #56776C;
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* dark mode user-agent-styles */
+
+html {
+    color-scheme: dark light;
+}
+
+/* min body height */
+
 body {
-    margin: 0 0 0 0;
+    min-height: 100vh;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+/* Fonts */
+@font-face {
+    font-family: Schoolbell;
+    src: url(../../public/fonts/Schoolbell-Regular.ttf);
+}
+
+@font-face {
+    font-family: Jost;
+    src: url(../../public/fonts/Jost-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Jost-italic;
+    src: url(../../public/fonts/Jost-Italic-VariableFont_wght.ttf);
 }

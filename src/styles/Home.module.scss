@@ -5,4 +5,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background-color: #3A5A40;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    color: #DAD7CD;
+
+    .title {
+        margin: 1rem 0;
+        text-align: center;
+        font-family: 'Schoolbell', cursive;
+        font-size: 3rem;
+    }
+
+    .flavourText {
+        font-family: 'Jost', sans-serif;
+        margin: 1rem 0;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .content {
+        width: auto;
+    }
 }
