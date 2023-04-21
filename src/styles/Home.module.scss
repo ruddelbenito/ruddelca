@@ -28,6 +28,18 @@
     }
 }
 
+// Media queries
+
+@media (prefers-color-scheme: light) {
+    .main {
+        background-color: #A3B18A;
+    }
+
+    .content {
+        color: #344E41;
+    }
+}
+
 @media only screen and (min-width: 500px) {
     .content {
         width: auto;
