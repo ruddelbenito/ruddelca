@@ -16,7 +16,8 @@ export default function Home() {
           <h1 className={styles.title}>hi, i'm ruddel</h1>
 
           <div className={styles.links}>
-            <Link href='/about'>About</Link>
+            <p><Link href='/about'>About</Link></p>
+            <p><Link href='/projects'>Projects</Link></p>
           </div>
         </div>
       </main>
