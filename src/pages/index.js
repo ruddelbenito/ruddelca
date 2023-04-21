@@ -20,7 +20,7 @@ export default function Home() {
             className={styles.image}
           />
 
-          <p className={styles.flavourText}>Sorry, but there's not a whole lot happening here just yet. Come back later!</p>
+          <p className={styles.flavourText}>Sorry, but there's not a whole lot happening here just yet. Check again soon.</p>
         </div>
       </main>
     </>
