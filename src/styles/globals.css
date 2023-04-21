@@ -40,14 +40,19 @@ video {
 @font-face {
     font-family: Schoolbell;
     src: url(../../public/fonts/Schoolbell-Regular.ttf);
+
+    /* To prevent Flash of Invisible Text (FOIT) */
+    font-display: swap;
 }
 
 @font-face {
     font-family: Jost;
     src: url(../../public/fonts/Jost-VariableFont_wght.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Jost-italic;
     src: url(../../public/fonts/Jost-Italic-VariableFont_wght.ttf);
+    font-display: swap;
 }
