@@ -18,7 +18,7 @@ export default function Home() {
           <div className={styles.links}>
             <Link href='/about'>About</Link>
             <Link href='/projects'>Projects</Link>
-            <Link href='/projects'>Contact</Link>
+            <Link href='/contact'>Contact</Link>
           </div>
         </div>
       </main>
