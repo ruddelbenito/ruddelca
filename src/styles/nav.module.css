@@ -1,0 +1,54 @@
+.nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #344E41;
+}
+.nav .homelink,
+.nav .homelink a,
+.nav .icon,
+.nav .pageLinkGroup,
+.nav .pageLink {
+  background-color: #344E41;
+}
+.nav .icon {
+  cursor: pointer;
+}
+.nav .pageLinkGroup {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+  overflow: hidden;
+  height: 0;
+}
+.nav .pageLinkGroup.active {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.nav .pageLink {
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: 0.2s;
+}
+
+@media only screen and (min-width: 600px) {
+  .nav .icon {
+    display: none;
+  }
+  .nav .pageLinkGroup {
+    position: static;
+    width: auto;
+    display: block;
+    padding: 0;
+  }
+  .nav .pageLink:nth-child(2) {
+    margin: 0 2rem;
+  }
+}/*# sourceMappingURL=nav.module.css.map */

@@ -1,0 +1,25 @@
+/* Colors */
+* {
+  background-color: #3A5A40;
+  color: #DAD7CD;
+}
+
+/* Fonts */
+@font-face {
+  font-family: Jost;
+  src: url(../../public/assets/fonts/Jost-VariableFont_wght.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: Jost-italic;
+  src: url(../../public/assets/fonts/Jost-Italic-VariableFont_wght.ttf);
+  font-display: swap;
+}
+/* Media Queries */
+/* Light theme */
+@media (prefers-color-scheme: light) {
+  * {
+    background-color: #A3B18A;
+    color: #344E41;
+  }
+}/*# sourceMappingURL=globals.css.map */
