@@ -19,6 +19,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        background-color: #344E41;
         overflow: hidden;
 
         height: 0;
@@ -26,7 +27,7 @@
         // For whatever reason, browser is not picking up on this
         &.active {
             height: fit-content;
-            background-color: #344E41;
+
         }
 
 
@@ -56,6 +57,20 @@
 
         .pageLink:nth-child(2) {
             margin: 0 2rem;
+        }
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .nav {
+        background-color: #588157;
+
+        .pageLinkGroup {
+            background-color: #588157;
+        }
+
+        a {
+            color: #DAD7CD;
         }
     }
 }
