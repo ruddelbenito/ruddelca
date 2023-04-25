@@ -8,8 +8,6 @@ import Nav from '@/components/nav'
 export default function App({ Component, pageProps }) {
   const router = useRouter();
 
-  console.log(router.pathname);
-
   return (
     <>
       {router.pathname !== '/' ? <Nav /> : <></>}
