@@ -7,14 +7,6 @@
     // Background styling
     background-color: #344E41;
 
-    .homelink,
-    .homelink a,
-    .icon,
-    .pageLinkGroup,
-    .pageLink {
-        background-color: #344E41;
-    }
-
     .icon {
         fill: #DAD7CD;
         cursor: pointer;
@@ -34,6 +26,7 @@
         // For whatever reason, browser is not picking up on this
         &.active {
             height: fit-content;
+            background-color: #344E41;
         }
 
 
