@@ -7,8 +7,6 @@ export default function Nav() {
     const [active, setActive] = useState(false);
 
     function toggleNav() {
-        // let navLinks = document.getElementById('nav-links');
-        // navLinks.classList.toggle({ styles.active });
         setActive(!active);
     }
 
