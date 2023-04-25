@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
 
-    // Temporary background for visibility
+    // Background styling
     background-color: #344E41;
 
     .homelink,
@@ -15,9 +15,8 @@
         background-color: #344E41;
     }
 
-    // Temporary background styling ends here
-
     .icon {
+        fill: #DAD7CD;
         cursor: pointer;
     }
 
