@@ -6,10 +6,14 @@ import { useState } from 'react'
 export default function Nav() {
     const [active, setActive] = useState(false);
 
-    function showNav() {
+    function toggleNav() {
         // let navLinks = document.getElementById('nav-links');
         // navLinks.classList.toggle({ styles.active });
         setActive(!active);
+    }
+
+    function hideNav() {
+        setActive(false);
     }
 
     return (
@@ -17,11 +21,11 @@ export default function Nav() {
             <div className={styles.homelink}>
                 <Link href='/'>ruddel</Link>
             </div>
-            <Icon className={styles.icon} onClick={(e) => showNav()} />
+            <Icon className={styles.icon} onClick={(e) => toggleNav()} />
             <nav className={`${styles.pageLinkGroup} ${active ? styles.active : ''}`} id='nav-links'>
-                <Link className={styles.pageLink} href='/about'>About</Link>
-                <Link className={styles.pageLink} href='/projects'>Projects</Link>
-                <Link className={styles.pageLink} href='/contact'>Contact</Link>
+                <Link className={styles.pageLink} href='/about' onClick={(e) => hideNav()}>About</Link>
+                <Link className={styles.pageLink} href='/projects' onClick={(e) => hideNav()}>Projects</Link>
+                <Link className={styles.pageLink} href='/contact' onClick={(e) => hideNav()}>Contact</Link>
             </nav>
         </div>
     )
