@@ -9,9 +9,24 @@
     // Background styling
     background-color: variables.$palette-5;
 
+    a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        transition: 0.25s;
+
+        &:hover {
+            color: variables.$palette-2;
+        }
+    }
+
     .icon {
         fill: variables.$content-dark;
         cursor: pointer;
+        transition: 0.25s;
+
+        &:hover {
+            fill: variables.$palette-2;
+        }
     }
 
     .pageLinkGroup {
@@ -29,7 +44,6 @@
         // For whatever reason, browser is not picking up on this
         &.active {
             height: fit-content;
-
         }
 
 
