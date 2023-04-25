@@ -13,7 +13,7 @@ export default function About() {
                 <p>
                     I graduated from the Northern Alberta Institute of Technology (NAIT)'s Digital Media and IT - Computer Software Development program in September 2022.
                     During my time there, I learned a multitude of languages, skills, and a foundation of knowledge surrounding the software development life cycle
-                    — from programming languages such as C# and JavaScript to project management, communications, and agile/scrum methodologies.
+                    — from programming languages such as C#, SQL, and JavaScript to project management, communications, and agile/scrum methodologies.
                 </p>
                 {/* <p>
                     Since starting my software journey, 
