@@ -1,3 +1,5 @@
+@use 'variables';
+
 .nav {
     padding: 1rem;
     display: flex;
@@ -5,10 +7,10 @@
     align-items: center;
 
     // Background styling
-    background-color: #344E41;
+    background-color: variables.$palette-5;
 
     .icon {
-        fill: #DAD7CD;
+        fill: variables.$content-dark;
         cursor: pointer;
     }
 
@@ -19,7 +21,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        background-color: #344E41;
+        background-color: variables.$palette-5;
         overflow: hidden;
 
         height: 0;
@@ -63,14 +65,14 @@
 
 @media (prefers-color-scheme: light) {
     .nav {
-        background-color: #588157;
+        background-color: variables.$palette-3;
 
         .pageLinkGroup {
-            background-color: #588157;
+            background-color: variables.$palette-3;
         }
 
         a {
-            color: #DAD7CD;
+            color: variables.$palette-1;
         }
     }
 }

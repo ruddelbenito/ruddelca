@@ -1,11 +1,13 @@
+@use 'variables';
+
 /* Colors */
 body {
-    background-color: #3A5A40;
-    color: #DAD7CD;
+    background-color: variables.$background-dark;
+    color: variables.$content-dark;
 }
 
 a {
-    color: #DAD7CD;
+    color: variables.$content-dark;
 }
 
 /* Fonts */
@@ -25,11 +27,11 @@ a {
 /* Light theme */
 @media (prefers-color-scheme: light) {
     body {
-        background-color: #A3B18A;
-        color: #344E41;
+        background-color: variables.$background-light;
+        color: variables.$content-light;
     }
 
     a {
-        color: #344E41;
+        color: variables.$content-light;
     }
 }
