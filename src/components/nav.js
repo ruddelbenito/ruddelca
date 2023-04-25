@@ -1,7 +1,6 @@
 import styles from '@/styles/nav.module.scss'
 import Link from 'next/link'
 import Icon from '../../public/assets/svgs/menu.svg'
-import { useState } from 'react'
 
 export default function Nav() {
     function showNav() {
