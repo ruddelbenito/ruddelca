@@ -1,0 +1,52 @@
+@use 'variables';
+
+.home {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+
+    .title {
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+
+        font-weight: 600;
+        font-size: 1.5rem;
+
+        a {
+            text-decoration: none;
+            margin: 0.75rem 0;
+            transition: 0.25s;
+
+            &:hover {
+                color: variables.$palette-2;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .links {
+        margin: 0 auto;
+        width: 50% !important;
+        flex-direction: row !important;
+        justify-content: space-around;
+    }
+}
