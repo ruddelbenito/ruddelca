@@ -1,4 +1,3 @@
-import Nav from '@/components/nav'
 import moment from 'moment'
 
 export default function About() {
@@ -6,7 +5,6 @@ export default function About() {
 
     return (
         <>
-            <Nav />
             <h1>About</h1>
             <div>
                 <p>Hi, I'm Russel. I'm a {currentAge}-year-old software developer from Edmonton, Alberta, Canada. </p>
