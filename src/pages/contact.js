@@ -3,19 +3,32 @@ import { useState } from 'react'
 import { Alert, AlertTitle } from '@mui/material';
 
 export default function Contact() {
-    const { register, errors, handleSubmit, reset } = useForm();
+    const { register, handleSubmit, errors, reset } = useForm();
     const [showAlert, setShowAlert] = useState(false);
+    const [alertSeverity, setAlertSeverity] = useState('success');
     const [alertTitle, setAlertTitle] = useState('');
     const [alertDescription, setAlertDescription] = useState('');
 
     const onSubmit = (data) => {
+        // console.log(data.email)
+        setAlertSeverity('success')
+        setAlertTitle('Message sent successfully')
+        setAlertDescription('Thank you for your message. If it warrants a response, I will reply via email!')
         setShowAlert(true)
-        console.log(data)
         reset()
     }
 
     const onError = (errors) => {
-        console.log(errors)
+        setAlertSeverity('error')
+        setAlertTitle('Could not send message')
+        setAlertDescription('One or more inputs are invalid. Please double-check them and try again')
+        setShowAlert(true)
+
+    }
+
+    const onClear = () => {
+        reset()
+        setShowAlert(false)
     }
 
     return (
@@ -23,8 +36,8 @@ export default function Contact() {
             <h1>Contact</h1>
 
             {showAlert ?
-                <Alert severity='success'>
-                    <AlertTitle>This is a test alert</AlertTitle>
+                <Alert severity={alertSeverity}>
+                    <AlertTitle>{alertTitle}</AlertTitle>
                     {alertDescription}
                 </Alert>
                 :
@@ -42,7 +55,7 @@ export default function Contact() {
                 <textarea {...register('message', { required: true })} />
 
                 <button type='submit'>Send</button>
-                <button onClick={(e) => reset()}>Clear</button>
+                <button onClick={() => onClear()}>Clear</button>
             </form>
 
             <div>
