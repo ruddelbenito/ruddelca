@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form'
 import { useState } from 'react'
-import { Alert, AlertTitle } from '@mui/material';
+import { Alert, AlertTitle } from '@mui/material'
+import styles from '@/styles/contact.module.scss'
 
 export default function Contact() {
     const { register, handleSubmit, errors, reset } = useForm();

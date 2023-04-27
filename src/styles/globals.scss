@@ -11,6 +11,15 @@ a {
     color: variables.$content-dark;
 }
 
+// Page titles
+h1 {
+    width: fit-content;
+    margin: 2rem auto;
+    text-align: center;
+
+    font-size: 2.5rem;
+}
+
 /* Fonts */
 @font-face {
     font-family: Jost;
