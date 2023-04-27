@@ -11,14 +11,11 @@ export default function Contact() {
     const onSubmit = (data) => {
         setShowAlert(true)
         console.log(data)
+        reset()
     }
 
     const onError = (errors) => {
         console.log(errors)
-    }
-
-    const onClear = () => {
-        reset(register)
     }
 
     return (
@@ -28,7 +25,11 @@ export default function Contact() {
             {showAlert ?
                 <Alert severity='success'>
                     <AlertTitle>This is a test alert</AlertTitle>
-                </Alert> : <></>}
+                    {alertDescription}
+                </Alert>
+                :
+                <></>
+            }
 
             <form onSubmit={handleSubmit(onSubmit, onError)}>
                 <label>Name</label>
@@ -41,7 +42,7 @@ export default function Contact() {
                 <textarea {...register('message', { required: true })} />
 
                 <button type='submit'>Send</button>
-                <button>Clear</button>
+                <button onClick={(e) => reset()}>Clear</button>
             </form>
 
             <div>
