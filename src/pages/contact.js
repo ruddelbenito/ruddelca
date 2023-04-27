@@ -9,6 +9,7 @@ export default function Contact() {
     const [alertDescription, setAlertDescription] = useState('');
 
     const onSubmit = (data) => {
+        setShowAlert(true)
         console.log(data)
     }
 
@@ -24,9 +25,10 @@ export default function Contact() {
         <>
             <h1>Contact</h1>
 
-            {showAlert && <Alert>
-                <AlertTitle>This is a test alert</AlertTitle>
-            </Alert>}
+            {showAlert ?
+                <Alert severity='success'>
+                    <AlertTitle>This is a test alert</AlertTitle>
+                </Alert> : <></>}
 
             <form onSubmit={handleSubmit(onSubmit, onError)}>
                 <label>Name</label>
