@@ -1,4 +1,5 @@
 import { useForm } from 'react-hook-form'
+import { useState } from 'react'
 
 export default function Contact() {
     const { register, errors, handleSubmit } = useForm();
@@ -25,6 +26,7 @@ export default function Contact() {
                 <textarea {...register('message', { required: true })} />
 
                 <button type='submit'>Send</button>
+                <button>Clear</button>
             </form>
 
             <div>

@@ -25,7 +25,7 @@ export default function Projects() {
                     which led to <a href='https://imgur.com/a/vv4hS5C' target='_blank' rel='noreferrer'>shoddy drafts</a>, and, of course, to the web app
                     itself.
                 </p>
-                <p>Technologies used: JavaScript, React, Firebase, CSS, EmailJS</p>
+                <p>Technologies used: JavaScript, React, Firebase, CSS, EmailJS, React-Bootstrap</p>
             </div>
 
             {/* Surfselect */}
