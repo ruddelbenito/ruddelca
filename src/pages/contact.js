@@ -1,18 +1,30 @@
+import { useForm } from 'react-hook-form'
+
 export default function Contact() {
+    const { register, errors, handleSubmit } = useForm();
+
+    const onSubmit = data => {
+        console.log(data)
+    }
+
+    const onError = errors => {
+        console.log(errors)
+    }
+
     return (
         <>
             <h1>Contact</h1>
-            <form>
+            <form onSubmit={handleSubmit(onSubmit, onError)}>
                 <label>Name</label>
-                <input></input>
+                <input {...register('name', { required: true })}></input>
 
                 <label>Email</label>
-                <input></input>
+                <input {...register('email', { required: true, pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/ })}></input>
 
                 <label>Message</label>
-                <textarea />
+                <textarea {...register('message', { required: true })} />
 
-                <button>Send</button>
+                <button type='submit'>Send</button>
             </form>
 
             <div>
