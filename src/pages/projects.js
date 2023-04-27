@@ -22,7 +22,7 @@ export default function Projects() {
                 <p>
                     Through this project, I had the opportunity to manage an entire project solo. I was able to sharpen my skills with Firebase's back-end
                     and authentication, meanwhile improving my abilities with front-end development. My client came to me with an idea in casual conversation,
-                    which led to <a href='https://imgur.com/a/vv4hS5C' target='_blank' rel='noreferrer'>poorly-made drafts</a> and, of course, to the web app
+                    which led to <a href='https://imgur.com/a/vv4hS5C' target='_blank' rel='noreferrer'>shoddy drafts</a>, and, of course, to the web app
                     itself.
                 </p>
                 <p>Technologies used: JavaScript, React, Firebase, CSS, EmailJS</p>
