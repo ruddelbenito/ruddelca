@@ -12,6 +12,7 @@ export default function Contact() {
 
     const onSubmit = (data) => {
         // console.log(data.email)
+        console.log('save attempt')
         setAlertSeverity('success')
         setAlertTitle('Message sent successfully')
         setAlertDescription('Thank you for your message. If it warrants a response, I will reply via email!')
@@ -19,11 +20,7 @@ export default function Contact() {
         reset()
     }
 
-    const onError = (errors) => {
-        setAlertSeverity('error')
-        setAlertTitle('Could not send message')
-        setAlertDescription('One or more inputs are invalid. Please double-check them and try again')
-        setShowAlert(true)
+    const onError = () => {
 
     }
 
@@ -37,7 +34,7 @@ export default function Contact() {
             <h1>Contact</h1>
 
             {showAlert ?
-                <Alert severity={alertSeverity}>
+                <Alert className={styles.alert} severity={alertSeverity} icon={false}>
                     <AlertTitle>{alertTitle}</AlertTitle>
                     {alertDescription}
                 </Alert>
@@ -45,23 +42,23 @@ export default function Contact() {
                 <></>
             }
 
-            <form onSubmit={handleSubmit(onSubmit, onError)}>
-                <label>Name</label>
-                <input {...register('name', { required: true })}></input>
+            <form className={styles.contactForm} onSubmit={handleSubmit(onSubmit, onError)}>
+                <label className={styles.label}>Name</label>
+                <input className={styles.input} {...register('name', { required: true })}></input>
 
-                <label>Email</label>
-                <input {...register('email', { required: true, pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/ })}></input>
+                <label className={styles.label}>Email</label>
+                <input className={styles.input} {...register('email', { required: true, pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/ })}></input>
 
-                <label>Message</label>
-                <textarea {...register('message', { required: true })} />
+                <label className={styles.label}>Message</label>
+                <textarea className={styles.input} {...register('message', { required: true })} />
 
-                <button type='submit'>Send</button>
-                <button onClick={() => onClear()}>Clear</button>
+                <div className={styles.buttons}>
+                    <button className={styles.buttonSend} type='submit'>Send</button>
+                    <button className={styles.buttonClear} onClick={() => onClear()}>Clear</button>
+                </div>
             </form>
 
-            <div>
-                Alternatively, you can email me at ruddel.benito@gmail.com
-            </div>
+            <p className={styles.emailText}>Alternatively, I can be reached at ruddel.benito@gmail.com</p>
         </>
     )
 }

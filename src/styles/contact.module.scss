@@ -1,0 +1,44 @@
+@use 'variables';
+
+.alert {
+    width: 80%;
+    max-width: 35rem;
+    margin: 2rem auto;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 35rem;
+}
+
+.label {
+    font-size: 1.5rem;
+}
+
+.input {
+    margin-bottom: 1rem;
+    padding: 0.25rem;
+    background-color: variables.$palette-3;
+    border: 1px solid variables.$palette-5;
+    border-radius: 0.25rem;
+
+    // Prevent textarea width from exceeding form
+    // and being too small
+    max-width: 100%;
+    min-width: 50%;
+}
+
+.buttons {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 15rem;
+}
+
+.emailText {
+    width: fit-content;
+    margin: 2rem auto 0 auto;
+}
