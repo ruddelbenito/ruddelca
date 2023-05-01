@@ -58,7 +58,7 @@ export default function Contact() {
                 </div>
             </form>
 
-            <p className={styles.emailText}>Alternatively, I can be reached at ruddel.benito@gmail.com</p>
+            <p className={styles.emailText}>Alternatively, you can reach me via email at ruddel.benito@gmail.com</p>
         </>
     )
 }
