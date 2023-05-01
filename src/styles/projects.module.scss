@@ -1,0 +1,22 @@
+@use 'variables';
+
+.project {
+    padding: 2rem;
+
+    .projectTitle {
+        font-size: 2rem;
+    }
+}
+
+// PSA
+.PSATitle {
+    display: flex;
+    align-items: center;
+
+    .PSALogo {
+        width: 2rem;
+        height: auto;
+        margin-right: 0.75rem;
+        fill: variables.$palette-1;
+    }
+}
