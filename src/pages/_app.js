@@ -10,11 +10,11 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
 
   return (
-    <>
+    <div className='page-content'>
       {router.pathname !== '/' ? <Nav /> : <></>}
       <Component {...pageProps} />
       {/* <Analytics /> */}
       {router.pathname !== '/' ? <Footer /> : <></>}
-    </>
+    </div>
   )
 }

@@ -1,6 +1,5 @@
 @use 'variables';
 
-/* Colors */
 body {
     background-color: variables.$background-dark;
     color: variables.$content-dark;
@@ -9,6 +8,11 @@ body {
 
 a {
     color: variables.$content-dark;
+}
+
+.page-content {
+    min-height: 100vh;
+    position: relative;
 }
 
 // Page titles
