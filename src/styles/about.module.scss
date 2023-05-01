@@ -1,3 +1,18 @@
+@use 'variables';
+
 .intro {
-    margin: 50vh 0;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 7.5rem 0;
+}
+
+.schoolBackground {
+    background-color: variables.$palette-2;
+    color: variables.$palette-4;
+    padding: 4rem;
+    font-size: 1.25rem;
+
+    p:nth-child(2) {
+        margin-top: 3rem;
+    }
 }
