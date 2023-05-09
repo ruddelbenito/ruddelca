@@ -9,5 +9,26 @@
     .footerContent {
         padding: 1rem;
         text-align: center;
+        align-items: center;
+
+        display: flex;
+        justify-content: space-between;
+
+        .icons {
+            a:not(:first-child):not(:last-child) {
+                margin: 0 0.5rem;
+            }
+
+            .instagram,
+            .github,
+            .linkedin {
+                fill: variables.$palette-1;
+                transition: 0.2s;
+
+                &:hover {
+                    fill: variables.$palette-2;
+                }
+            }
+        }
     }
 }
