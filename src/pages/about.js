@@ -10,6 +10,7 @@ export default function About() {
 
             <div className={styles.intro}>
                 <p>Hi, I'm Russel. I'm a {currentAge}-year-old software developer from Edmonton, Alberta, Canada. </p>
+                <p className={styles.pronouns}>he/him</p>
             </div>
 
             <div className={styles.schoolBackground}>
