@@ -17,7 +17,8 @@ export default function Projects() {
                     <PSALogo className={styles.PSALogo} />
                     <h2 className={styles.projectTitle}>Philippine Sports Association (PSA)</h2>
                 </div>
-                <p className={styles.projectLink}><a href='https://psa-webapp.vercel.app/' target='_blank' rel='noreferrer'>https://psa-webapp.vercel.app/</a></p>
+                <p>No public access yet, please check back soon or <Link href='/contact'>message me</Link> for inquiries!</p>
+                {/* <p className={styles.projectLink}><a href='https://psa-webapp.vercel.app/' target='_blank' rel='noreferrer'>https://psa-webapp.vercel.app/</a></p> */}
                 <p>November 2022 - Present</p>
                 <p>
                     PSA is a Filipino, Edmonton-based community basketball league. With that in mind, having an online presence where users can keep
