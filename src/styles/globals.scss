@@ -13,7 +13,8 @@ a {
 .page-content {
     height: 100%;
     min-height: 100vh;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 // Page titles

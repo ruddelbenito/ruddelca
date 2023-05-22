@@ -1,10 +1,9 @@
 @use 'variables';
 
 .footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     background-color: variables.$palette-5;
+    margin-top: auto;
 
     .footerContent {
         padding: 1rem;
