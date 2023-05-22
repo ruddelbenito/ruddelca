@@ -12,7 +12,18 @@
     padding: 4rem;
     font-size: 1.25rem;
 
-    p:nth-child(2) {
-        margin-top: 3rem;
+    p:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}
+
+.interests {
+    background-color: variables.$palette-3;
+    color: variables.$palette-1;
+    padding: 4rem;
+    font-size: 1.25rem;
+
+    p:not(:last-child) {
+        margin-bottom: 2rem;
     }
 }

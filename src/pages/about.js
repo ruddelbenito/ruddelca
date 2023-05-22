@@ -25,25 +25,33 @@ export default function About() {
 
             <div className={styles.interests}>
                 <p>Outside of software development, I enjoy music, going to the gym, and video games.</p>
-                <div>
+                <div className={styles.music}>
                     <p>
                         Music has always been an important part of my life. I took up the guitar at the age of 10, and continue to play to this day (albeit terribly).
                         The storytelling and lyricism in hip-hop specifically always captivated me.
+                    </p>
+                    <p>
                         Music has also taken a more physical form in my life, as I have recently started a vinyl record collection.
                         I currently have 14 records, 6 of which are hung up on one of my bedroom walls, while the others wait because I can't afford to buy more shelving
                         at the moment.
+                    </p>
+                    <p>
                         I believe that music and sound, or a lack thereof, can help portray expression in media.
                         Movies like Baby Driver and Guardians of the Galaxy wouldn't be what they are without the music.
                     </p>
                 </div>
-                <div>
-                    Around August 2021, I started going to the gym. Initially, it was just another thing to do with my friends while attempting to improve my appearance.
-                    Now, it has become a routine that has improved my physical and mental health.
+                <div className={styles.gym}>
+                    <p>
+                        Around August 2021, I started going to the gym. Initially, it was just another thing to do with my friends while attempting to improve my appearance.
+                        Now, it has become a routine that has improved my physical and mental health.
+                    </p>
                 </div>
-                <div>
-                    Video games have always been prevalent in my life. Growing up, my cousins and I would play my grandfather's games almost daily. I vividly recall
-                    playing GoldenEye 007 on the N64 after eating dinner. Eventually, I would get a computer at home, and I could play games whenever I wanted to,
-                    leading to the destruction of my eyesight.
+                <div className={styles.games}>
+                    <p>
+                        Video games have always been prevalent in my life. Growing up, my cousins and I would play my grandfather's games almost daily. I vividly recall
+                        playing GoldenEye 007 on the N64 after eating dinner. Eventually, I would get a computer at home, and I could play games whenever I wanted to,
+                        leading to the destruction of my eyesight.
+                    </p>
                 </div>
             </div>
         </>
