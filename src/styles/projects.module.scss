@@ -1,7 +1,9 @@
 @use 'variables';
 
 .project {
-    padding: 2rem;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    background-color: variables.$palette-3;
 
     .projectTitle {
         font-size: 2rem;
@@ -14,6 +16,7 @@
     align-items: center;
 
     .PSALogo {
+        min-width: 2rem;
         width: 2rem;
         height: auto;
         margin-right: 0.75rem;
