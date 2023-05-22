@@ -13,6 +13,8 @@
         display: flex;
         justify-content: space-between;
 
+        font-weight: 600;
+
         .icons {
             a:not(:first-child):not(:last-child) {
                 margin: 0 0.5rem;
