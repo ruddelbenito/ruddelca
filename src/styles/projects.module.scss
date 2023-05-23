@@ -1,12 +1,23 @@
 @use 'variables';
 
 .project {
-    padding: 1.5rem;
-    margin: 1.5rem;
-    background-color: variables.$palette-3;
+    padding: 2rem;
 
-    .projectTitle {
-        font-size: 2rem;
+    &:nth-child(odd) {
+        background-color: variables.$palette-3;
+    }
+
+    &:nth-child(even) {
+        background-color: variables.$palette-4;
+    }
+
+    .projectHeader {
+        margin-bottom: 2rem;
+
+        .projectTitle {
+            font-size: 2rem;
+            font-weight: 600;
+        }
     }
 }
 

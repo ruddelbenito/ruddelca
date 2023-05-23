@@ -13,13 +13,14 @@ export default function Projects() {
                 - add PSA SVG to header
             */}
             <div className={styles.project}>
-                <div className={styles.PSATitle}>
-                    <PSALogo className={styles.PSALogo} />
-                    <h2 className={styles.projectTitle}>Philippine Sports Association (PSA)</h2>
+                <div className={styles.projectHeader}>
+                    <div className={styles.PSATitle}>
+                        <PSALogo className={styles.PSALogo} />
+                        <h2 className={styles.projectTitle}>Philippine Sports Association (PSA)</h2>
+                    </div>
+                    <p>No public access yet, please check back soon or <Link href='/contact'>message me</Link> for inquiries!</p>
+                    <p>November 2022 - Present</p>
                 </div>
-                <p>No public access yet, please check back soon or <Link href='/contact'>message me</Link> for inquiries!</p>
-                {/* <p className={styles.projectLink}><a href='https://psa-webapp.vercel.app/' target='_blank' rel='noreferrer'>https://psa-webapp.vercel.app/</a></p> */}
-                <p>November 2022 - Present</p>
                 <p>
                     PSA is a Filipino, Edmonton-based community basketball league. With that in mind, having an online presence where users can keep
                     tabs on games, announcements, and standings is important.
@@ -39,9 +40,11 @@ export default function Projects() {
 
             {/* Surfselect */}
             <div className={styles.project}>
-                <h2 className={styles.projectTitle}>Surfselect</h2>
-                <p className={styles.projectLink}><a href='https://surfselect.ca/' target='_blank' rel='noreferrer'>surfselect.ca</a></p>
-                <p>January 2022 - April 2022</p>
+                <div className={styles.projectHeader}>
+                    <h2 className={styles.projectTitle}>Surfselect</h2>
+                    <p className={styles.projectLink}><a href='https://surfselect.ca/' target='_blank' rel='noreferrer'>surfselect.ca</a></p>
+                    <p>January 2022 - April 2022</p>
+                </div>
                 <p>
                     Surfselect was a capstone project created during my Winter 2022 semester at NAIT. Our group of 7 software development, 2 visual
                     communications, and 2 business analyst students were tasked with making a wake boat comparison web application. Similar to
@@ -56,9 +59,11 @@ export default function Projects() {
 
             {/* Personal Portfolio */}
             <div className={styles.project}>
-                <h2 className={styles.projectTitle}>Personal Portfolio</h2>
-                <p className={styles.projectLink}><Link href='/'>ruddel.ca</Link></p>
-                <p>April 2023 - Present</p>
+                <div className={styles.projectHeader}>
+                    <h2 className={styles.projectTitle}>Personal Portfolio</h2>
+                    <p className={styles.projectLink}><Link href='/'>ruddel.ca</Link></p>
+                    <p>April 2023 - Present</p>
+                </div>
                 <p>How is someone with the knowledge and ability to make a web app not going to make one for themself?</p>
                 <p>
                     With this web app, I wanted to expand my skillset while staying within the realm of React. In my previous projects, I had not used a
