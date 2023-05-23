@@ -8,10 +8,6 @@ export default function Projects() {
             <h1>Projects</h1>
 
             {/* PSA */}
-            {/* TODO:
-                - turn the quotes into those iphone message speech bubbles
-                - add PSA SVG to header
-            */}
             <div className={styles.project}>
                 <div className={styles.projectHeader}>
                     <div className={styles.PSATitle}>
@@ -26,16 +22,20 @@ export default function Projects() {
                     tabs on games, announcements, and standings is important.
                 </p>
                 <p>
-                    The PSA web app is one I developed entirely on my own. My client hit me up saying "yo can u make PSA a web app"
-                    to which I responded with "i got you".
+                    The PSA web app is one I developed entirely on my own. My client hit me up with a
                 </p>
+                <div className={styles.messageBox}>
+                    <p className={styles.messageReceived}>yo can u make PSA a web app</p>
+                    <p>to which I responded with</p>
+                    <p className={styles.messageSent}>i got you</p>
+                </div>
                 <p>
                     Through this project, I had the opportunity to manage an entire project solo. I was able to sharpen my skills with Firebase's back-end
                     and authentication, meanwhile improving my abilities with front-end development. My client came to me with an idea in casual conversation,
                     which led to <a href='https://imgur.com/a/vv4hS5C' target='_blank' rel='noreferrer'>shoddy drafts</a>, and, of course, to the web app
                     itself.
                 </p>
-                <p>Technologies used: JavaScript, React, Firebase, CSS, EmailJS</p>
+                <p className={styles.technologies}>Technologies used: JavaScript, React, Firebase, CSS, EmailJS</p>
             </div>
 
             {/* Surfselect */}
@@ -54,7 +54,7 @@ export default function Projects() {
                     On this project, I was tasked with back-end functionality and authentication. Additionally, I worked on the implementation of the graph
                     on the 'Comparison' page.
                 </p>
-                <p>Technologies used: JavaScript, React, Firebase, CSS</p>
+                <p className={styles.technologies}>Technologies used: JavaScript, React, Firebase, CSS</p>
             </div>
 
             {/* Personal Portfolio */}
@@ -69,7 +69,7 @@ export default function Projects() {
                     With this web app, I wanted to expand my skillset while staying within the realm of React. In my previous projects, I had not used a
                     framework, nor had I tried implementing Sass, so I figured I would try them on a low-stakes project.
                 </p>
-                <p>Technologies used: Javascript, React, Next.JS, Sass</p>
+                <p className={styles.technologies}>Technologies used: Javascript, React, Next.JS, Sass, EmailJS</p>
             </div>
         </>
     )
