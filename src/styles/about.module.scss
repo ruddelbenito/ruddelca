@@ -13,9 +13,13 @@
 
 .devBackground {
     background-color: variables.$palette-2;
-    color: variables.$palette-4;
     padding: 4rem;
-    font-size: 1.25rem;
+
+    a,
+    p {
+        color: variables.$palette-4;
+        font-size: 1.25rem;
+    }
 
     p {
         margin-top: 2rem;

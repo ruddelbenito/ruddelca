@@ -1,5 +1,6 @@
 import moment from 'moment'
 import styles from '@/styles/about.module.scss'
+import Link from 'next/link'
 
 export default function About() {
     const currentAge = moment().diff(moment('1999-09-09'), 'years', false);
@@ -25,7 +26,7 @@ export default function About() {
                 </div>
                 <div className={styles.postSchool}>
                     <p>
-                        After school, I decided to work part-time while in pursuit of a software career. I took on a project that I would work on during my off-days, which
+                        After school, I decided to work part-time while in pursuit of a software career. I took on a <Link href='/projects'>project</Link> that I would work on during my off-days, which
                         gave me more software experience and a sense of direction career-wise.
                     </p>
                 </div>
