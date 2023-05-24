@@ -3,7 +3,7 @@
 .project {
     padding: 2rem;
     margin: 0 1rem;
-    background-color: variables.$palette-3;
+    background-color: darken(variables.$palette-3, 20%);
     border-radius: 1rem;
 
     display: flex;
