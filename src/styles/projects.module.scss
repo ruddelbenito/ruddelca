@@ -6,21 +6,44 @@
     background-color: variables.$palette-3;
     border-radius: 1rem;
 
+    display: flex;
+    flex-direction: column;
+
     &:not(:last-child) {
         margin-bottom: 4rem;
     }
 
-    .projectHeader {
-        margin-bottom: 2rem;
-
-        .projectTitle {
-            font-size: 2rem;
-            font-weight: 600;
-        }
+    .projectImage {
+        margin: 0 auto 1rem auto;
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        border-radius: 0.25rem;
     }
 
-    .technologies {
-        margin-top: 1rem;
+    .projectInfo {
+        display: flex;
+        flex-direction: column;
+
+        .projectHeader {
+            font-weight: 600;
+            margin-bottom: 1rem;
+
+            .projectTitle {
+                font-size: 2rem;
+            }
+
+            .projectLink,
+            .projectTimeline {
+                font-size: 1.25rem;
+            }
+        }
+
+        .projectDescription {
+            .technologies {
+                margin-top: 1rem;
+            }
+        }
     }
 }
 
@@ -39,10 +62,10 @@
 }
 
 .messageBox {
-    background-color: #4D5452;
-    max-width: 20rem;
+    background-color: #363837;
     margin: 1rem auto;
-    padding: 0.5rem;
+    padding: 0.75rem;
+    max-width: 40rem;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -51,11 +74,12 @@
 
     .messageReceived,
     .messageSent {
-        padding: 0.5rem;
+        padding: 0.5rem 1rem;
         border-radius: 1rem;
     }
 
     .messageReceived {
+        max-width: 40%;
         margin-right: auto;
         margin-bottom: 0.5rem;
         background-color: #9A9A9A;
@@ -66,5 +90,30 @@
         margin-left: auto;
         margin-top: 0.5rem;
         background-color: #3E71A7;
+        color: #D8DBDF;
+    }
+}
+
+// Media queries
+@media only screen and (min-width: 412px) {
+    .PSATitle {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1092px) {
+    .project {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .projectImage {
+            width: 35%;
+            height: 100%;
+        }
+
+        .projectInfo {
+            width: 60%;
+        }
     }
 }
