@@ -36,8 +36,9 @@ export default function About() {
                 <p>Outside of software development, I enjoy music, going to the gym, and video games.</p>
                 <div className={styles.music}>
                     <p>
-                        Music has always been an important part of my life. I took up the guitar at the age of 10, and continue to play to this day (albeit terribly).
-                        I believe that music and sound, or a lack thereof, can help portray expression in media.
+                        Music has always been an important part of my life.It can serve as a form of expression, a mood enhancer, and can bring people together.
+                        I have also I took up the guitar at the age of 10, and continue to play to this day (albeit terribly).
+                        I also believe that music and sound, or a lack thereof, can help portray expression in other forms of media.
                         Movies like Baby Driver and Guardians of the Galaxy wouldn't be what they are without the music.
                     </p>
                     <p>
