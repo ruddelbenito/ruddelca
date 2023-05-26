@@ -50,7 +50,7 @@ export default function About() {
                         Music has always been an important part of my life.It can serve as a form of expression, a mood enhancer, and can bring people together.
                         I have also I took up the guitar at the age of 10, and continue to play to this day (albeit terribly).
                         I also believe that music and sound, or a lack thereof, can help portray expression in other forms of media.
-                        Movies like Baby Driver and Guardians of the Galaxy wouldn't be what they are without the music.
+                        Movies like Baby Driver and Guardians of the Galaxy wouldn't be what they are without the accompanying music.
                     </p>
                     <p>
                         Music has also taken a more physical form in my life, as I have recently started a vinyl record collection.
@@ -77,7 +77,7 @@ export default function About() {
                 onClose={closeModal}
                 open={modalVisible}
             >
-                <img src='./assets/images/vinyl-records.png'></img>
+                <img src='./assets/images/vinyl-records.png' alt='My vinyl wall' />
             </Dialog>
         </>
     )

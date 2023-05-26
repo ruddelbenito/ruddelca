@@ -24,6 +24,14 @@
     p {
         margin-top: 2rem;
     }
+
+    a {
+        transition: 0.2s;
+    }
+
+    a:hover {
+        color: darken(variables.$palette-4, 5%);
+    }
 }
 
 .interests {
@@ -51,9 +59,11 @@
         font-family: 'Jost', sans-serif;
         text-decoration: underline;
         color: variables.$palette-1;
+        transition: 0.2s;
 
         &:hover {
             cursor: pointer;
+            color: variables.$palette-2;
         }
 
         &:focus {
