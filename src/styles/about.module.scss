@@ -41,4 +41,23 @@
     p {
         margin-bottom: 2rem;
     }
+
+    .recordWallButton {
+        background: none;
+        border: none;
+        padding: 0;
+        margin: none;
+        font-size: 1.25rem;
+        font-family: 'Jost', sans-serif;
+        text-decoration: underline;
+        color: variables.$palette-1;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
 }
