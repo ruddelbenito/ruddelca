@@ -37,7 +37,7 @@ export default function About() {
                 </div>
                 <div className={styles.postSchool}>
                     <p>
-                        After school, I decided to work part-time while in pursuit of a software career. I took on a <Link href='/projects'>project</Link> that I would work
+                        After school, I decided to work part-time while in pursuit of a software career. I took on some <Link href='/projects'>projects</Link> that I would work
                         on during my off-days, which gave me more software experience and a sense of direction career-wise.
                     </p>
                 </div>
