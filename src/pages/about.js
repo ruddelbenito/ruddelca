@@ -47,11 +47,12 @@ export default function About() {
                 <p>Outside of software development, I enjoy music, going to the gym, and video games.</p>
                 <div className={styles.music}>
                     <p>
-                        Music has always been an important part of my life. It can serve as a form of expression, a mood enhancer, and can bring people together. I believe that
-                        music and sound, or a lack thereof, can help portray expression in other forms of media. Movies like Baby Driver and Guardians of the Galaxy wouldn't be
-                        what they are without the accompanying music.
+                        Music has always been an important part of my life. It can serve as a form of expression, a mood enhancer, and can bring people together. I also believe
+                        that music and sound, or a lack thereof, can help portray expression in other forms of media. Movies like Baby Driver and Guardians of the Galaxy
+                        wouldn't be what they are without the accompanying music.
                     </p>
-                    <p>I took up the guitar at the age of 10, and continue to play to this day (albeit terribly).</p>
+                    <p>I took up the guitar at the age of 10, played trumpet throughout junior high and high school, and have touched a drum kit once or twice in my lifetime.
+                        Today, the only instrument I continue to play is the guitar (albeit terribly).</p>
                     <p>
                         Music has also taken a more physical form in my life, as I have recently started a vinyl record collection.
                         I currently have 14 records, 6 of which are <button className={styles.recordWallButton} onClick={() => setModalVisible(true)}>hung up on one of my
@@ -67,21 +68,28 @@ export default function About() {
                     <p>
                         The COVID-19 pandemic and other life events during that time brought my life to a standstill. My days felt both mundane and hectic at the same time.
                         I dropped school for a semester, wasn't working, and was taking care of my parents due to injuries, meanwhile trying to adjust to the restrictions
-                        placed due to the pandemic. Once I started going to the gym, I felt like my days had purpose again. I was working on myself most days of the week
-                        and had goals that I would work towards.
+                        placed due to the pandemic. Once I started going to the gym, I felt like my days had purpose again. I started working on myself most days of the week
+                        and had goals I would work towards.
                     </p>
                 </div>
                 <div className={styles.games}>
                     <p>
                         Video games have always been prevalent in my life. Growing up, my cousins and I would play my grandfather's games almost daily. I vividly recall
-                        playing GoldenEye 007 on the N64 after eating dinner. Eventually, I would get a computer at home, and I could play games whenever I wanted to,
-                        leading to the destruction of my eyesight.
+                        playing GoldenEye 007 on the N64 after eating dinner every night. Eventually, I would get a computer at home, and I could play games whenever I wanted
+                        to.
+                    </p>
+                    <p>
+                        Growing up, I had a few phases where I only played a single game. First, it was ROBLOX, followed by Team Fortress 2, and finally
+                        Counter-Strike: Global Offensive. Nowadays, I bounce around between different games. Lately, I have been playing Legend of Zelda: Tears of the Kingdom,
+                        Genshin Impact, Honkai: Star Rail, and first-person shooters like Apex Legends and Valorant now and then. <span>My mental health will not let me
+                            play those last two for extended periods of time.</span>
                     </p>
                 </div>
             </div>
             <Dialog
                 onClose={closeModal}
                 open={modalVisible}
+                className='record-dialog'
             >
                 <img src='./assets/images/vinyl-records.png' alt='My vinyl wall' />
             </Dialog>
