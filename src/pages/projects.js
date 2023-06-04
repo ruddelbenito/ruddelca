@@ -1,8 +1,17 @@
 import styles from '@/styles/projects.module.scss'
 import PSALogo from '../../public/assets/svgs/psa.svg'
 import Link from 'next/link'
+import Dialog from '@mui/material/Dialog'
+import { useState } from 'react'
+import PSACarousel from '@/components/psaCarousel.js'
 
 export default function Projects() {
+    const [modalVisible, setModalVisible] = useState(false);
+
+    const closeModal = () => {
+        setModalVisible(false);
+    }
+
     return (
         <>
             <h1>Projects</h1>
@@ -41,7 +50,7 @@ export default function Projects() {
                         <p>
                             Through this project, I had the opportunity to manage an entire project solo. I was able to sharpen my skills with Firebase's back-end
                             and authentication, meanwhile improving my abilities with front-end development. My client came to me with an idea in casual conversation,
-                            which led to <a href='https://imgur.com/a/vv4hS5C' target='_blank' rel='noreferrer'>shoddy drafts</a>, and, of course, to the web app
+                            which led to <button className={styles.draftsButton} onClick={() => setModalVisible(true)}>shoddy drafts</button>, and, of course, to the web app
                             itself.
                         </p>
                         <p className={styles.technologies}>Technologies used: JavaScript, React, Firebase, CSS, EmailJS</p>
@@ -102,6 +111,16 @@ export default function Projects() {
                     </div>
                 </div>
             </div>
+
+            <button onClick={() => setModalVisible(true)}>test button</button>
+
+            <Dialog
+                onClose={closeModal}
+                open={modalVisible}
+                className='record-dialog'
+            >
+                <PSACarousel />
+            </Dialog>
         </>
     )
 }

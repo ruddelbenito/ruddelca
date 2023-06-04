@@ -8,10 +8,6 @@ export default function About() {
     const [modalVisible, setModalVisible] = useState(false);
     const currentAge = moment().diff(moment('1999-09-09'), 'years', false);
 
-    const openModal = () => {
-        setModalVisible(true);
-    }
-
     const closeModal = () => {
         setModalVisible(false);
     }
