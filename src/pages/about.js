@@ -79,8 +79,7 @@ export default function About() {
                         to.
                     </p>
                     <p>
-                        Growing up, I had a few phases where I only played a single game. First, it was ROBLOX, followed by Team Fortress 2, and finally
-                        Counter-Strike: Global Offensive. Nowadays, I bounce around between different games. Lately, I have been playing Legend of Zelda: Tears of the Kingdom,
+                        To this day I enjoy playing games when I have time. Recently, I have been playing Legend of Zelda: Tears of the Kingdom,
                         Genshin Impact, Honkai: Star Rail, and first-person shooters like Apex Legends and Valorant now and then. <span>My mental health will not let me
                             play those last two for extended periods of time.</span>
                     </p>
