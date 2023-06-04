@@ -80,7 +80,7 @@ export default function About() {
                     </p>
                     <p>
                         To this day I enjoy playing games when I have time. Recently, I have been playing Legend of Zelda: Tears of the Kingdom,
-                        Genshin Impact, Honkai: Star Rail, and first-person shooters like Apex Legends and Valorant now and then. <span>My mental health will not let me
+                        Genshin Impact, Honkai: Star Rail, and first-person shooters like Valorant now and then. <span>My mental health will not let me
                             play those last two for extended periods of time.</span>
                     </p>
                 </div>
