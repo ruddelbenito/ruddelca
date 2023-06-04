@@ -20,7 +20,7 @@ export default function Projects() {
                             <PSALogo className={styles.PSALogo} />
                             <h2 className={styles.projectTitle}>Philippine Sports Association (PSA)</h2>
                         </div>
-                        <p className={styles.projectLink}>No public access yet, please check back soon or <Link href='/contact'>message me</Link> for inquiries!</p>
+                        <p className={styles.projectLink}>No public access yet. Please check back soon or <Link href='/contact'>message me</Link> for inquiries!</p>
                         <p className={styles.projectTimeline}>November 2022 - Present</p>
                     </div>
                     <div className={styles.projectDescription}>
@@ -28,13 +28,15 @@ export default function Projects() {
                             PSA is a Filipino, Edmonton-based community basketball league. With that in mind, having an online presence where users can keep
                             tabs on games, announcements, and standings is important.
                         </p>
-                        <p>
-                            The PSA web app is one I developed entirely on my own. My client hit me up with a
-                        </p>
-                        <div className={styles.messageBox}>
-                            <p className={styles.messageReceived}>yo can u make PSA a web app</p>
-                            <p>to which I responded with</p>
-                            <p className={styles.messageSent}>i got you</p>
+                        <div className={styles.messageSegment}>
+                            <p>
+                                The PSA web app is one I developed entirely on my own. My client hit me up with a
+                            </p>
+                            <div className={styles.messageBox}>
+                                <p className={styles.messageReceived}>yo can u make PSA a web app</p>
+                                <p>to which I responded with</p>
+                                <p className={styles.messageSent}>i got you</p>
+                            </div>
                         </div>
                         <p>
                             Through this project, I had the opportunity to manage an entire project solo. I was able to sharpen my skills with Firebase's back-end
