@@ -2,7 +2,7 @@
 
 .footer {
     width: 100%;
-    background-color: variables.$palette-5;
+    // background-color: variables.$palette-5;
     margin-top: auto;
 
     .footerContent {
@@ -27,11 +27,11 @@
             .instagram,
             .github,
             .linkedin {
-                fill: variables.$palette-1;
+                // fill: variables.$palette-1;
                 transition: 0.2s;
 
                 &:hover {
-                    fill: variables.$palette-2;
+                    // fill: variables.$palette-2;
                 }
             }
         }

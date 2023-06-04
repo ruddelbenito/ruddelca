@@ -7,7 +7,7 @@
     align-items: center;
 
     // Background styling
-    background-color: variables.$palette-5;
+    // background-color: variables.$palette-5;
 
     a {
         text-decoration: none;
@@ -16,17 +16,17 @@
         transition: 0.25s;
 
         &:hover {
-            color: variables.$palette-2;
+            // color: variables.$palette-2;
         }
     }
 
     .icon {
-        fill: variables.$content-dark;
+        // fill: variables.$content-dark;
         cursor: pointer;
         transition: 0.25s;
 
         &:hover {
-            fill: variables.$palette-2;
+            // fill: variables.$palette-2;
         }
     }
 
@@ -37,7 +37,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        background-color: variables.$palette-5;
+        // background-color: variables.$palette-5;
         overflow: hidden;
 
         height: 0;
@@ -80,14 +80,14 @@
 
 @media (prefers-color-scheme: light) {
     .nav {
-        background-color: variables.$palette-3;
+        // background-color: variables.$palette-3;
 
         .pageLinkGroup {
-            background-color: variables.$palette-3;
+            // background-color: variables.$palette-3;
         }
 
         a {
-            color: variables.$palette-1;
+            // color: variables.$palette-1;
         }
     }
 }
