@@ -112,8 +112,6 @@ export default function Projects() {
                 </div>
             </div>
 
-            <button onClick={() => setModalVisible(true)}>test button</button>
-
             <Dialog
                 onClose={closeModal}
                 open={modalVisible}
