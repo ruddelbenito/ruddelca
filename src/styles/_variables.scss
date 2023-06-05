@@ -1,11 +1,17 @@
-$palette-1: #DAD7CD;
-$palette-2: #A3B18A;
-$palette-3: #588157;
-$palette-4: #3A5A40;
-$palette-5: #344E41;
+$palette-1: #10002B;
+$palette-2: #240046;
+$palette-3: #3C096C;
+$palette-4: #5A189A;
+$palette-5: #7B2CBF;
+$palette-6: #9D4EDD;
+$palette-7: #C77DFF;
+$palette-8: #E0AAFF;
+$palette-9: #dfdfdf;
 
-$background-dark: $palette-4;
-$background-light: $palette-2;
+$background-dark: #10002B;
+$content-dark: #dfdfdf;
+$content-dark-hover: #9D4EDD;
 
-$content-dark: $palette-1;
-$content-light: $palette-5;
+$background-light: lighten(#E0AAFF, 12.5%);
+$content-light: #5A189A;
+$content-light-hover: #9D4EDD;

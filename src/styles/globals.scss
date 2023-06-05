@@ -1,13 +1,18 @@
 @use 'variables';
 
 body {
-    // background-color: variables.$background-dark;
-    // color: variables.$content-dark;
+    background-color: variables.$background-dark;
+    color: variables.$content-dark;
     font-family: 'Jost', sans-serif;
 }
 
 a {
-    // color: variables.$content-dark;
+    color: variables.$content-dark;
+    transition: 0.2s;
+
+    &:hover {
+        color: variables.$content-dark-hover;
+    }
 }
 
 .page-content {
@@ -44,11 +49,15 @@ h1 {
 /* Light theme */
 @media (prefers-color-scheme: light) {
     body {
-        // background-color: variables.$background-light;
-        // color: variables.$content-light;
+        background-color: variables.$background-light;
+        color: variables.$content-light;
     }
 
     a {
-        // color: variables.$content-light;
+        color: variables.$content-light;
+
+        &:hover {
+            color: variables.$content-light-hover;
+        }
     }
 }
