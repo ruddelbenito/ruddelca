@@ -3,7 +3,7 @@
 .project {
     padding: 2rem;
     margin: 0 1rem;
-    // background-color: darken(variables.$palette-3, 20%);
+    background-color: variables.$palette-2;
     border-radius: 1rem;
 
     display: flex;
@@ -57,7 +57,7 @@
         width: 2rem;
         height: auto;
         margin-right: 0.75rem;
-        // fill: variables.$palette-1;
+        fill: variables.$content-dark;
     }
 }
 
@@ -106,12 +106,12 @@
     font-size: 100%;
     font-family: 'Jost', sans-serif;
     text-decoration: underline;
-    // color: variables.$palette-1;
+    color: variables.$content-dark;
     transition: 0.2s;
 
     &:hover {
         cursor: pointer;
-        // color: variables.$palette-2;
+        color: variables.$content-dark-hover;
     }
 
     &:focus {
