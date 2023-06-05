@@ -7,26 +7,22 @@
     align-items: center;
 
     // Background styling
-    // background-color: variables.$palette-5;
+    background-color: variables.$palette-2;
 
     a {
         text-decoration: none;
         font-size: 1.5rem;
         font-weight: 600;
         transition: 0.25s;
-
-        &:hover {
-            // color: variables.$palette-2;
-        }
     }
 
     .icon {
-        // fill: variables.$content-dark;
+        fill: variables.$content-dark;
         cursor: pointer;
         transition: 0.25s;
 
         &:hover {
-            // fill: variables.$palette-2;
+            fill: variables.$content-dark-hover;
         }
     }
 
@@ -37,7 +33,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        // background-color: variables.$palette-5;
+        background-color: variables.$palette-2;
         overflow: hidden;
 
         height: 0;
