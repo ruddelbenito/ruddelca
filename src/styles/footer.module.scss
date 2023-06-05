@@ -37,3 +37,25 @@
         }
     }
 }
+
+// Media Queries
+
+@media (prefers-color-scheme: light) {
+    .footer {
+        background-color: lighten(#E0AAFF, 12.5%);
+
+        .footerContent {
+            color: variables.$content-light;
+
+            .instagram,
+            .github,
+            .linkedin {
+                fill: variables.$content-light !important;
+
+                &:hover {
+                    fill: variables.$content-light-hover !important;
+                }
+            }
+        }
+    }
+}
