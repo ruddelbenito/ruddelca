@@ -67,8 +67,8 @@ function PSACarousel() {
                     alignItems: 'center',
                     height: 50,
                     pl: 2,
-                    bgcolor: '#344E41',
-                    color: '#DAD7CD',
+                    bgcolor: '#5A189A',
+                    color: '#DFDFDF',
                 }}
             >
                 <Typography>{images[activeStep].label}</Typography>
@@ -103,8 +103,8 @@ function PSACarousel() {
                 position="static"
                 activeStep={activeStep}
                 sx={{
-                    bgcolor: '#344E41',
-                    color: '#DAD7CD'
+                    bgcolor: '#5A189A',
+                    color: '#DFDFDF'
                 }}
                 nextButton={
                     <Button
@@ -112,7 +112,7 @@ function PSACarousel() {
                         onClick={handleNext}
                         disabled={activeStep === maxSteps - 1}
                         sx={{
-                            color: '#DAD7CD'
+                            color: '#DFDFDF'
                         }}
                     >
                         Next
@@ -129,7 +129,7 @@ function PSACarousel() {
                         onClick={handleBack}
                         disabled={activeStep === 0}
                         sx={{
-                            color: '#DAD7CD'
+                            color: '#DFDFDF'
                         }}
                     >
                         {theme.direction === 'rtl' ? (
