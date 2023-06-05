@@ -66,10 +66,27 @@
 
 @media (prefers-color-scheme: light) {
     .devBackground {
-        background-color: variables.$palette-8;
+        background-color: variables.$palette-3;
+
+        a,
+        p {
+            color: variables.$content-dark;
+        }
+
+        a:hover {
+            color: variables.$palette-6;
+        }
     }
 
     .interests {
-        background-color: lighten(variables.$palette-8, 15%);
+        background-color: variables.$background-light;
+
+        .recordWallButton {
+            color: variables.$content-light;
+
+            &:hover {
+                color: variables.$palette-1;
+            }
+        }
     }
 }

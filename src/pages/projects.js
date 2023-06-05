@@ -43,7 +43,7 @@ export default function Projects() {
                             </p>
                             <div className={styles.messageBox}>
                                 <p className={styles.messageReceived}>yo can u make PSA a web app</p>
-                                <p>to which I responded with</p>
+                                <p className={styles.messageNarration}>to which I responded with</p>
                                 <p className={styles.messageSent}>i got you</p>
                             </div>
                         </div>

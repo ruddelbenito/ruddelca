@@ -42,15 +42,15 @@
 
 @media (prefers-color-scheme: light) {
     .footer {
-        background-color: lighten(#E0AAFF, 12.5%);
+        background-color: variables.$background-light;
 
         .footerContent {
-            color: variables.$content-light;
+            color: variables.$palette-5;
 
             .instagram,
             .github,
             .linkedin {
-                fill: variables.$content-light !important;
+                fill: variables.$palette-5 !important;
 
                 &:hover {
                     fill: variables.$content-light-hover !important;

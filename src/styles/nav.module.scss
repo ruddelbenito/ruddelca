@@ -76,17 +76,17 @@
 
 @media (prefers-color-scheme: light) {
     .nav {
-        background-color: lighten(#E0AAFF, 12.5%);
+        background-color: variables.$background-light;
 
         .pageLinkGroup {
-            background-color: lighten(#E0AAFF, 12.5%);
+            background-color: variables.$background-light;
         }
 
         a {
             color: variables.$palette-5;
 
             &:hover {
-                color: variables.$palette-3;
+                color: variables.$content-light-hover;
             }
         }
     }
