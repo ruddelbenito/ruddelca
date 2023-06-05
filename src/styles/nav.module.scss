@@ -7,7 +7,7 @@
     align-items: center;
 
     // Background styling
-    background-color: variables.$palette-2;
+    background-color: variables.$background-dark;
 
     a {
         text-decoration: none;
@@ -33,7 +33,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        background-color: variables.$palette-2;
+        background-color: variables.$background-dark;
         overflow: hidden;
 
         height: 0;
