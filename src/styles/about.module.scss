@@ -1,0 +1,92 @@
+@use 'variables';
+
+.intro {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 7.5rem 0;
+    padding: 0 3rem;
+
+    .pronouns {
+        margin-top: 1rem;
+    }
+}
+
+.devBackground {
+    background-color: variables.$palette-3;
+    padding: 4rem;
+
+    a,
+    p {
+        font-size: 1.25rem;
+    }
+
+    p {
+        margin-top: 2rem;
+    }
+}
+
+.interests {
+    background-color: variables.$background-dark;
+    padding: 4rem;
+    font-size: 1.25rem;
+
+    .music,
+    .gym,
+    .games {
+        margin-top: 5rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    .recordWallButton {
+        background: none;
+        border: none;
+        padding: 0;
+        margin: none;
+        font-size: 1.25rem;
+        font-family: 'Jost', sans-serif;
+        text-decoration: underline;
+        color: variables.$content-dark;
+        transition: 0.2s;
+
+        &:hover {
+            cursor: pointer;
+            color: variables.$content-dark-hover;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+// Media Queries
+
+@media (prefers-color-scheme: light) {
+    .devBackground {
+        background-color: variables.$palette-3;
+
+        a,
+        p {
+            color: variables.$content-dark;
+        }
+
+        a:hover {
+            color: variables.$palette-6;
+        }
+    }
+
+    .interests {
+        background-color: variables.$background-light;
+
+        .recordWallButton {
+            color: variables.$content-light;
+
+            &:hover {
+                color: variables.$palette-1;
+            }
+        }
+    }
+}

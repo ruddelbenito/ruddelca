@@ -1,0 +1,85 @@
+@use 'variables';
+
+.alert {
+    width: 80%;
+    max-width: 35rem;
+    margin: 2rem auto;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 35rem;
+}
+
+.label {
+    font-size: 1.5rem;
+}
+
+.input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: variables.$palette-9;
+    border: none;
+    // border: 1px solid variables.$palette-2;
+    border-radius: 0.25rem;
+
+    // Prevent textarea width from exceeding form
+    // and being too small
+    max-width: 100%;
+    min-width: 50%;
+    min-height: 1rem;
+
+    font-family: 'Jost', sans-serif;
+}
+
+.buttons {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 15rem;
+}
+
+.buttonSend,
+.buttonClear {
+    padding: 0.5rem 1rem;
+    background: variables.$palette-4;
+    border: none;
+    border-radius: 0.5rem;
+
+    font-size: 1.25rem;
+    color: variables.$palette-9;
+    font-weight: 600;
+
+    transition: 0.2s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: variables.$palette-3;
+    }
+}
+
+.emailText {
+    width: fit-content;
+    margin: 2rem auto 0 auto;
+}
+
+// Media Queries
+
+@media (prefers-color-scheme: light) {
+    .input {
+        background-color: #FFF;
+    }
+
+    .buttonSend,
+    .buttonClear {
+        background-color: variables.$palette-5;
+        color: #FFF;
+
+        &:hover {
+            background-color: variables.$palette-4;
+        }
+    }
+}
