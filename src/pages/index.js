@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <main className={styles.home}>
         <div className={styles.content}>
-          <h1 className={styles.title}>hi, i'm ruddel</h1>
+          <h1 className={styles.title}>hi, I'm ruddel</h1>
 
           <div className={styles.links}>
             <Link href='/about'>About</Link>
