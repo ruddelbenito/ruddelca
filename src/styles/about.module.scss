@@ -61,3 +61,15 @@
         }
     }
 }
+
+// Media Queries
+
+@media (prefers-color-scheme: light) {
+    .devBackground {
+        background-color: variables.$palette-8;
+    }
+
+    .interests {
+        background-color: lighten(variables.$palette-8, 15%);
+    }
+}
