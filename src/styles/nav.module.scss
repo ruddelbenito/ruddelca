@@ -79,10 +79,10 @@
 
 @media (prefers-color-scheme: light) {
     .nav {
-        background-color: variables.$background-light;
+        background-color: darken(variables.$background-light, 10%);
 
         .pageLinkGroup {
-            background-color: variables.$background-light;
+            background-color: darken(variables.$background-light, 10%);
         }
 
         a {
