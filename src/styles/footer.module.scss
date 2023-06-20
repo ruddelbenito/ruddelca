@@ -2,7 +2,7 @@
 
 .footer {
     width: 100%;
-    background-color: variables.$background-dark;
+    background-color: darken(variables.$background-dark, 2.5%);
     margin-top: auto;
 
     .footerContent {
@@ -42,7 +42,7 @@
 
 @media (prefers-color-scheme: light) {
     .footer {
-        background-color: variables.$background-light;
+        background-color: darken(variables.$background-light, 10%);
 
         .footerContent {
             color: variables.$palette-5;
