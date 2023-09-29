@@ -29,7 +29,7 @@ export default function Projects() {
                             <PSALogo className={styles.PSALogo} />
                             <h2 className={styles.projectTitle}>Philippine Sports Association (PSA)</h2>
                         </div>
-                        <p className={styles.projectLink}>No public access yet. Please check back soon or <Link href='/contact'>message me</Link> for inquiries!</p>
+                        <p className={styles.projectLink}><a href='https://psaedm.com/' target='_blank' rel='noreferrer'>psaedm.com</a></p>
                         <p className={styles.projectTimeline}>November 2022 - Present</p>
                     </div>
                     <div className={styles.projectDescription}>
