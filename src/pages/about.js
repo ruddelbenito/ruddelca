@@ -51,9 +51,8 @@ export default function About() {
                         Today, the only instrument I continue to play is the guitar (albeit terribly).</p>
                     <p>
                         Music has also taken a more physical form in my life, as I have recently started a vinyl record collection.
-                        I currently have 14 records, 6 of which are <button className={styles.recordWallButton} onClick={() => setModalVisible(true)}>hung up on one of my
-                            bedroom wall </button>,
-                        while the others wait because I can't afford to buy more shelving at the moment. Eventually, I wish to plaster my entire wall full of records.
+                        I currently have 21 records, all of which are <button className={styles.recordWallButton} onClick={() => setModalVisible(true)}>hung up on my
+                            bedroom walls. </button> Eventually, I wish to plaster my entire wall full of records.
                     </p>
                 </div>
                 <div className={styles.gym}>
@@ -86,7 +85,7 @@ export default function About() {
                 open={modalVisible}
                 className='record-dialog'
             >
-                <img src='./assets/images/vinyl-records.png' alt='My vinyl wall' />
+                <img src='./assets/images/vinyl-records.jpg' alt='My vinyl wall' />
             </Dialog>
         </>
     )
