@@ -30,7 +30,7 @@ export default function Projects() {
                             <h2 className={styles.projectTitle}>Philippine Sports Association (PSA)</h2>
                         </div>
                         <p className={styles.projectLink}><a href='https://psaedm.com/' target='_blank' rel='noreferrer'>psaedm.com</a></p>
-                        <p className={styles.projectTimeline}>November 2022 - Present</p>
+                        <p className={styles.projectTimeline}>November 2022 - April 2023</p>
                     </div>
                     <div className={styles.projectDescription}>
                         <p>
@@ -98,7 +98,7 @@ export default function Projects() {
                     <div className={styles.projectHeader}>
                         <h2 className={styles.projectTitle}>Personal Portfolio</h2>
                         <p className={styles.projectLink}><Link href='/'>ruddel.ca</Link></p>
-                        <p className={styles.projectTimeline}>April 2023 - Present</p>
+                        <p className={styles.projectTimeline}>April 2023 - June 2023</p>
                     </div>
 
                     <div className={styles.projectDescription}>
