@@ -16,6 +16,29 @@ export default function Projects() {
         <>
             <h1>Projects</h1>
 
+            <div className={styles.project}>
+                <img
+                    src='./assets/images/levvy.png'
+                    alt='levvy Screenshot'
+                    className={styles.projectImage}
+                />
+                <div className={styles.projectInfo}>
+                    <div className={styles.projectInfo}>
+                        <div className={styles.projectHeader}>
+                            <h2 className={styles.projectTitle}>levvy</h2>
+                            <p className={styles.projectLink}><a href='https://levvy-ten.vercel.app/' target='_blank' rel='noreferrer'>levvy-ten.vercel.app</a></p>
+                            <p className={styles.projectTimeline}>June 2024</p>
+                        </div>
+
+                        <div className={styles.projectDescription}>
+                            <p>
+                                levvy is a <a href='https://www.geeksforgeeks.org/introduction-to-levenshtein-distance/' target='_blank' rel='noreferrer'>Levenshtein Distance</a> visualisation tool.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             {/* PSA */}
             <div className={styles.project}>
                 <img
