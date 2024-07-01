@@ -1,30 +1,69 @@
 @use 'variables';
 
+.navbar {
+    background-color: variables.$red-dark;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.homeLink {
+    text-decoration: none;
+    font-family: Merriweather-Italic;
+    font-size: 2.75rem;
+    color: variables.$white;
+    filter: drop-shadow(2px 2px 0 variables.$black);
+}
+
+.icon {
+    cursor: pointer;
+    fill: variables.$white;
+    width: 2rem;
+    height: auto;
+    filter: drop-shadow(5px 3px 0 variables.$black);
+}
+
 .pageLinkGroup {
+    background-color: variables.$red-dark;
     position: absolute;
-    top: 3.5rem;
+    top: 3.75rem;
     left: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-
     height: 0;
 
-    // For whatever reason, browser is not picking up on this
+
     &.active {
         height: fit-content;
+        padding: 0 0 1rem 0;
     }
 
 
 }
 
 .pageLink {
-    // width: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    font-family: Akaya-Kanadaka;
+    font-size: 2rem;
+    color: variables.$white;
+    text-decoration: none;
+    -webkit-text-stroke: 1px variables.$black;
+
+    &:nth-child(2) {
+        margin: 0.5rem auto;
+    }
 }
 
 // Media queries
 @media only screen and (min-width: 600px) {
+    .icon {
+        display: none;
+    }
+
     .pageLinkGroup {
         position: static;
         width: auto;
