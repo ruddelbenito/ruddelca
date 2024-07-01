@@ -6,3 +6,17 @@
     display: flex;
     flex-direction: column;
 }
+
+// Fonts
+
+@font-face {
+    font-family: Merriweather-Italic;
+    src: url(../../public/assets/fonts/MerriweatherSans-Italic-VariableFont_wght.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Akaya-Kanadaka;
+    src: url(../../public/assets/fonts/AkayaKanadaka-Regular.ttf);
+    font-display: swap;
+}
