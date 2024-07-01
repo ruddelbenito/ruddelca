@@ -1,0 +1,44 @@
+@use 'variables';
+
+.form {
+    margin: 0 auto;
+    width: 75%;
+    max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+
+    .name,
+    .email,
+    .message {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            color: variables.$white;
+            font-family: Akaya-Kanadaka;
+            font-size: 2rem;
+            -webkit-text-stroke: 1px variables.$black;
+            filter: drop-shadow(-2px 1px 0 variables.$red-bright);
+            position: relative;
+            right: 0.5rem;
+            bottom: 0.1rem;
+            transform: rotate(-5deg);
+            pointer-events: none;
+        }
+
+        input,
+        textarea {
+            font-family: Merriweather-Italic;
+        }
+    }
+}
+
+.altContact {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 75%;
+    max-width: 20rem;
+    color: variables.$white;
+    font-family: Merriweather-Italic;
+    font-size: 1rem;
+}

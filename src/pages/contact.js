@@ -2,6 +2,7 @@ import { useForm } from 'react-hook-form'
 import { useState, useRef } from 'react'
 import { Alert, AlertTitle } from '@mui/material'
 import emailjs from '@emailjs/browser'
+import styles from '@/styles/contact.module.scss'
 
 export default function Contact() {
     const { register, handleSubmit, errors, reset } = useForm();
@@ -46,7 +47,7 @@ export default function Contact() {
             <h1>Contact</h1>
 
             {showAlert ?
-                <Alert severity={alertSeverity} icon={false}>
+                <Alert className={styles.alert} severity={alertSeverity} icon={false}>
                     <AlertTitle>{alertTitle}</AlertTitle>
                     {alertDescription}
                 </Alert>
@@ -55,25 +56,32 @@ export default function Contact() {
             }
 
             <form
+                className={styles.form}
                 onSubmit={handleSubmit(onSubmit, onError)}
                 ref={form}
             >
-                <label>Name</label>
-                <input name='from_name' {...register('from_name', { required: true })}></input>
+                <div className={styles.name}>
+                    <label>Name</label>
+                    <input name='from_name' {...register('from_name', { required: true })}></input>
+                </div>
 
-                <label>Email</label>
-                <input name='email' {...register('email', { required: true, pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/ })}></input>
+                <div className={styles.email}>
+                    <label>Email</label>
+                    <input name='email' {...register('email', { required: true, pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/ })}></input>
+                </div>
 
-                <label>Message</label>
-                <textarea name='message' {...register('message', { required: true })} />
+                <div className={styles.message}>
+                    <label>Message</label>
+                    <textarea name='message' {...register('message', { required: true })} />
+                </div>
 
-                <div>
+                <div className={styles.buttons}>
                     <button type='submit'>Send</button>
                     <button onClick={() => onClear()}>Clear</button>
                 </div>
             </form>
 
-            <p>Alternatively, you can reach me via email at ruddel.benito@gmail.com</p>
+            <p className={styles.altContact}>Alternatively, you can reach me via email at ruddel.benito@gmail.com</p>
         </>
     )
 }
