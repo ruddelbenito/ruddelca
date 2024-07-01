@@ -25,12 +25,12 @@ export default function Projects() {
                 <div>
                     <div>
                         <div className={styles.heading}>
-                            <h2>levvy</h2>
+                            <h2 className={styles.title}>levvy</h2>
                             <p><a href='https://levvy-ten.vercel.app/' target='_blank' rel='noreferrer'>levvy-ten.vercel.app</a></p>
                             <p>June 2024</p>
                         </div>
 
-                        <div>
+                        <div className={styles.description}>
                             <p>
                                 levvy is a <a href='https://www.geeksforgeeks.org/introduction-to-levenshtein-distance/' target='_blank' rel='noreferrer'>Levenshtein Distance</a> visualisation tool.
                             </p>
@@ -55,7 +55,7 @@ export default function Projects() {
                         <p><a href='https://psaedm.com/' target='_blank' rel='noreferrer'>psaedm.com</a></p>
                         <p>November 2022 - April 2023</p>
                     </div>
-                    <div>
+                    <div className={styles.description}>
                         <p>
                             PSA is a Filipino, Edmonton-based community basketball league. With that in mind, having an online presence where users can keep
                             tabs on games, announcements, and standings is important.
@@ -73,7 +73,7 @@ export default function Projects() {
                         <p>
                             Through this project, I had the opportunity to manage an entire project solo. I was able to sharpen my skills with Firebase's back-end
                             and authentication, meanwhile improving my abilities with front-end development. My client came to me with an idea in casual conversation,
-                            which led to <button onClick={() => setModalVisible(true)}>shoddy drafts</button>, and, of course, to the web app
+                            which led to <span className={styles.PSAModalButton} onClick={() => setModalVisible(true)}>shoddy drafts</span>, and, of course, to the web app
                             itself.
                         </p>
                         <p>Technologies used: JavaScript, React, Firebase, CSS, EmailJS</p>
@@ -90,12 +90,12 @@ export default function Projects() {
                 />
                 <div>
                     <div className={styles.heading}>
-                        <h2>Surfselect</h2>
+                        <h2 className={styles.title}>Surfselect</h2>
                         <p><a href='https://surfselect.ca/' target='_blank' rel='noreferrer'>surfselect.ca</a></p>
                         <p>January 2022 - April 2022</p>
                     </div>
 
-                    <div>
+                    <div className={styles.description}>
                         <p>
                             Surfselect was a capstone project created during my Winter 2022 semester at NAIT. Our group of 7 software development, 2 visual
                             communications, and 2 business analyst students were tasked with making a wake boat comparison web application. Similar to
@@ -119,12 +119,12 @@ export default function Projects() {
                 />
                 <div>
                     <div className={styles.heading}>
-                        <h2>Personal Portfolio</h2>
+                        <h2 className={styles.title}>Personal Portfolio</h2>
                         <p><Link href='/'>ruddel.ca</Link></p>
                         <p>April 2023 - June 2023</p>
                     </div>
 
-                    <div>
+                    <div className={styles.description}>
                         <p>How is someone with the knowledge and ability to make a web app not going to make one for themself?</p>
                         <p>
                             With this web app, I wanted to expand my skillset while staying within the realm of React. In my previous projects, I had not used a

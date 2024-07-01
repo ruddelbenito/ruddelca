@@ -2,7 +2,9 @@
 
 .project {
     margin: 0 auto 1rem auto;
+    padding: 0.5rem;
     width: 80%;
+    max-width: 20rem;
     background: variables.$black;
     color: variables.$white;
     fill: variables.$white;
@@ -10,27 +12,61 @@
 
     a {
         color: variables.$white;
+        transition: 0.1s;
+
+        &:hover {
+            color: variables.$red-bright;
+        }
     }
 
     .screenshot {
         display: block;
         width: 80%;
-        margin: 1rem auto;
+        margin: 1rem auto 0 auto;
     }
 
     .heading {
         font-family: Akaya-Kanadaka;
+        text-align: center;
+        font-size: 1.35rem;
+        margin-bottom: 1.5rem;
 
         .title {
-            display: flex;
-            align-items: center;
+            font-size: 3rem;
+            width: fit-content;
+            margin: 0 auto;
+            filter: drop-shadow(-1px 2px 0 variables.$red-bright);
+            -webkit-text-stroke: 1px black;
 
             .titleLogo {
-                width: 2rem;
+                width: 5rem;
                 height: auto;
+                margin-top: 0.5rem;
             }
         }
     }
 
+    .description {
+        font-family: Merriweather-Italic;
 
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+
+}
+
+.PSAModalButton {
+    border: none;
+    background: transparent;
+    color: variables.$white;
+    font-family: Merriweather-Italic;
+    font-size: 1rem;
+    text-decoration: underline;
+    transition: 0.1s;
+    cursor: pointer;
+
+    &:hover {
+        color: variables.$red-bright;
+    }
 }
