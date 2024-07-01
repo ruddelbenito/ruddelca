@@ -1,5 +1,4 @@
 import moment from 'moment'
-import styles from '@/styles/about.module.scss'
 import Link from 'next/link'
 import Dialog from '@mui/material/Dialog'
 import { useState } from 'react'
@@ -16,13 +15,13 @@ export default function About() {
         <>
             <h1>About</h1>
 
-            <div className={styles.intro}>
+            <div>
                 <p>Hi, I'm Russel. I'm a {currentAge}-year-old software developer from Edmonton, Alberta, Canada. </p>
-                <p className={styles.pronouns}>he/him</p>
+                <p>he/him</p>
             </div>
 
-            <div className={styles.devBackground}>
-                <div className={styles.school}>
+            <div>
+                <div>
                     <p>
                         I graduated from the Northern Alberta Institute of Technology (NAIT)'s Digital Media and IT - Computer Software Development program in September 2022.
                     </p>
@@ -31,7 +30,7 @@ export default function About() {
                         — from programming languages such as C#, SQL, and JavaScript to project management, communications, and agile/scrum methodologies.
                     </p>
                 </div>
-                <div className={styles.postSchool}>
+                <div>
                     <p>
                         After school, I decided to work part-time while in pursuit of a software career. I took on some <Link href='/projects'>projects</Link> that I would work
                         on during my off-days, which gave me more software experience and a sense of direction career-wise.
@@ -39,9 +38,9 @@ export default function About() {
                 </div>
             </div>
 
-            <div className={styles.interests}>
+            <div>
                 <p>Outside of software development, I enjoy music, going to the gym, and video games.</p>
-                <div className={styles.music}>
+                <div>
                     <p>
                         Music has always been an important part of my life. It can serve as a form of expression, a mood enhancer, and can bring people together. I also believe
                         that music and sound, or a lack thereof, can help portray expression in other forms of media. Movies like Baby Driver and Guardians of the Galaxy
@@ -51,11 +50,11 @@ export default function About() {
                         Today, the only instrument I continue to play is the guitar (albeit terribly).</p>
                     <p>
                         Music has also taken a more physical form in my life, as I have recently started a vinyl record collection.
-                        I currently have 21 records, all of which are <button className={styles.recordWallButton} onClick={() => setModalVisible(true)}>hung up on my
+                        I currently have 21 records, all of which are <button onClick={() => setModalVisible(true)}>hung up on my
                             bedroom walls. </button> Eventually, I wish to plaster my entire wall full of records.
                     </p>
                 </div>
-                <div className={styles.gym}>
+                <div>
                     <p>
                         Around August 2021, I started going to the gym. Initially, it was a half-baked attempt to change how I looked while going out with my friends.
                         Now, it has become a routine that has improved my physical and mental health.
@@ -67,7 +66,7 @@ export default function About() {
                         and had goals I would work towards.
                     </p>
                 </div>
-                <div className={styles.games}>
+                <div>
                     <p>
                         Video games have always been prevalent in my life. Growing up, my cousins and I would play my grandfather's games almost daily. I vividly recall
                         playing GoldenEye 007 on the N64 after eating dinner every night. Eventually, I would get a computer at home, and I could play games whenever I wanted

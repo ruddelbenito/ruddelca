@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from '@/styles/index.module.scss'
 
 export default function Home() {
   return (
@@ -11,11 +10,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.home}>
-        <div className={styles.content}>
-          <h1 className={styles.title}>hi, I'm ruddel</h1>
+      <main>
+        <div>
+          <h1>hi, I'm ruddel</h1>
 
-          <div className={styles.links}>
+          <div>
             <Link href='/about'>About</Link>
             <Link href='/projects'>Projects</Link>
             <Link href='/contact'>Contact</Link>
