@@ -1,0 +1,52 @@
+@use 'variables';
+
+.index {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .header {
+        font-family: Merriweather-Italic;
+        font-size: 4rem;
+        color: variables.$white;
+
+        h1 {
+            filter: drop-shadow(2px 2px 0 variables.$red-dark);
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+
+            a {
+                display: block;
+                height: 2rem;
+                margin: 0 0.2rem;
+            }
+
+            svg {
+                display: block;
+                fill: variables.$white;
+                filter: drop-shadow(2px 2px 0 variables.$red-dark);
+            }
+        }
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.5rem;
+
+        a {
+            font-family: Akaya-Kanadaka;
+            font-size: 3.5rem;
+            -webkit-text-stroke: 0.1rem variables.$black;
+            filter: drop-shadow(-2px 2px 0 variables.$red-bright);
+            color: variables.$white;
+            text-decoration: none;
+        }
+    }
+}
