@@ -1,0 +1,36 @@
+@use 'variables';
+
+.project {
+    margin: 0 auto 1rem auto;
+    width: 80%;
+    background: variables.$black;
+    color: variables.$white;
+    fill: variables.$white;
+    filter: drop-shadow(5px 5px 0 variables.$red-dark);
+
+    a {
+        color: variables.$white;
+    }
+
+    .screenshot {
+        display: block;
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .heading {
+        font-family: Akaya-Kanadaka;
+
+        .title {
+            display: flex;
+            align-items: center;
+
+            .titleLogo {
+                width: 2rem;
+                height: auto;
+            }
+        }
+    }
+
+
+}

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Dialog from '@mui/material/Dialog'
 import { useState } from 'react'
 import PSACarousel from '@/components/psaCarousel.js'
+import styles from '@/styles/projects.module.scss'
 
 export default function Projects() {
     const [modalVisible, setModalVisible] = useState(false);
@@ -15,14 +16,15 @@ export default function Projects() {
         <>
             <h1>Projects</h1>
 
-            <div>
+            <div className={styles.project}>
                 <img
+                    className={styles.screenshot}
                     src='./assets/images/levvy.png'
                     alt='levvy Screenshot'
                 />
                 <div>
                     <div>
-                        <div>
+                        <div className={styles.heading}>
                             <h2>levvy</h2>
                             <p><a href='https://levvy-ten.vercel.app/' target='_blank' rel='noreferrer'>levvy-ten.vercel.app</a></p>
                             <p>June 2024</p>
@@ -38,15 +40,16 @@ export default function Projects() {
             </div>
 
             {/* PSA */}
-            <div>
+            <div className={styles.project}>
                 <img
+                    className={styles.screenshot}
                     src='./assets/images/psa.png'
                     alt='PSA Screenshot'
                 />
                 <div>
-                    <div>
-                        <div>
-                            <PSALogo />
+                    <div className={styles.heading}>
+                        <div className={styles.title}>
+                            <PSALogo className={styles.titleLogo} />
                             <h2 >Philippine Sports Association (PSA)</h2>
                         </div>
                         <p><a href='https://psaedm.com/' target='_blank' rel='noreferrer'>psaedm.com</a></p>
@@ -79,13 +82,14 @@ export default function Projects() {
             </div>
 
             {/* Surfselect */}
-            <div>
+            <div className={styles.project}>
                 <img
+                    className={styles.screenshot}
                     src='./assets/images/surfselect.png'
                     alt='Surfselect screenshot'
                 />
                 <div>
-                    <div>
+                    <div className={styles.heading}>
                         <h2>Surfselect</h2>
                         <p><a href='https://surfselect.ca/' target='_blank' rel='noreferrer'>surfselect.ca</a></p>
                         <p>January 2022 - April 2022</p>
@@ -107,13 +111,14 @@ export default function Projects() {
             </div>
 
             {/* Personal Portfolio */}
-            <div>
+            <div className={styles.project}>
                 <img
+                    className={styles.screenshot}
                     src='./assets/images/ruddel.png'
                     alt='ruddel.ca screenshot'
                 />
                 <div>
-                    <div>
+                    <div className={styles.heading}>
                         <h2>Personal Portfolio</h2>
                         <p><Link href='/'>ruddel.ca</Link></p>
                         <p>April 2023 - June 2023</p>
