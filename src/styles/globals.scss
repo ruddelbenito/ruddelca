@@ -1,63 +1,8 @@
 @use 'variables';
 
-body {
-    background-color: variables.$background-dark;
-    color: variables.$content-dark;
-    font-family: 'Jost', sans-serif;
-}
-
-a {
-    color: variables.$content-dark;
-    transition: 0.2s;
-
-    &:hover {
-        color: variables.$content-dark-hover;
-    }
-}
-
 .page-content {
     height: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-// Page titles
-h1 {
-    width: fit-content;
-    margin: 2rem auto;
-    text-align: center;
-
-    font-size: 2.5rem;
-    font-weight: 500;
-}
-
-/* Fonts */
-@font-face {
-    font-family: Jost;
-    src: url(../../public/assets/fonts/Jost-VariableFont_wght.ttf);
-    font-display: swap;
-}
-
-@font-face {
-    font-family: Jost-italic;
-    src: url(../../public/assets/fonts/Jost-Italic-VariableFont_wght.ttf);
-    font-display: swap;
-}
-
-/* Media Queries */
-/* Light theme */
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: variables.$background-light;
-        color: variables.$content-light;
-    }
-
-    a {
-        color: variables.$content-light;
-
-        &:hover {
-            color: variables.$content-light-hover;
-        }
-    }
 }
