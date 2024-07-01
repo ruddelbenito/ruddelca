@@ -30,6 +30,40 @@
         textarea {
             font-family: Merriweather-Italic;
         }
+
+        textarea {
+            // Prevent textarea width from exceeding form
+            // and being too small
+            max-width: 100%;
+            min-width: 50%;
+            min-height: 1rem;
+        }
+    }
+
+    .buttons {
+        margin: 1rem auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        max-width: 20rem;
+
+        button {
+            cursor: pointer;
+            border: none;
+            background-color: variables.$white;
+            transform: rotate(-3deg);
+            font-family: Akaya-Kanadaka;
+            font-size: 1.45rem;
+            color: variables.$black;
+            // -webkit-text-stroke: 1px variables.$black;
+            filter: drop-shadow(3px 3px 0 variables.$red-dark);
+            transition: 0.15s;
+
+            &:hover {
+                background-color: variables.$red-bright;
+                color: variables.$white;
+            }
+        }
     }
 }
 

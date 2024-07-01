@@ -76,8 +76,8 @@ export default function Contact() {
                 </div>
 
                 <div className={styles.buttons}>
-                    <button type='submit'>Send</button>
-                    <button onClick={() => onClear()}>Clear</button>
+                    <button type='submit'>SEND</button>
+                    <button onClick={() => onClear()}>CLEAR</button>
                 </div>
             </form>
 
