@@ -15,11 +15,11 @@ export default function Nav() {
     }
 
     return (
-        <div className={styles.nav}>
-            <div className={styles.homelink}>
+        <div>
+            <div>
                 <Link href='/'>ruddel</Link>
             </div>
-            <Icon className={styles.icon} onClick={(e) => toggleNav()} />
+            <Icon onClick={(e) => toggleNav()} />
             <nav className={`${styles.pageLinkGroup} ${active ? styles.active : ''}`} id='nav-links'>
                 <Link className={styles.pageLink} href='/about' onClick={(e) => hideNav()}>About</Link>
                 <Link className={styles.pageLink} href='/projects' onClick={(e) => hideNav()}>Projects</Link>
