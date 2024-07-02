@@ -14,7 +14,7 @@ export default function Projects() {
 
     return (
         <>
-            <h1>Projects</h1>
+            <h1 className={styles.title}>Projects</h1>
 
             <div className={styles.project}>
                 <img
