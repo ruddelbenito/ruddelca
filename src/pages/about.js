@@ -14,7 +14,6 @@ export default function About() {
 
     return (
         <>
-            <h1>About</h1>
 
             <div className={styles.header}>
                 <p className={styles.greeting}>Hi, I'm Russel</p>
