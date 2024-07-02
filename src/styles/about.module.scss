@@ -1,7 +1,6 @@
 @use 'variables';
 
 .header {
-    // background-color: navy;
     margin: 0 auto;
     width: 100%;
     max-width: 25rem;
@@ -76,5 +75,66 @@
     &:hover {
         color: variables.$red-bright;
         cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .header {
+        max-width: none;
+        width: 35rem;
+        height: 25rem;
+
+        .greeting {
+            position: relative;
+            right: 8rem;
+        }
+
+        .pronouns {
+            position: relative;
+            right: 8rem;
+        }
+
+        .developer {
+            position: relative;
+            left: 7.5rem;
+            bottom: 2rem;
+        }
+
+        .location {
+            position: relative;
+            right: 2.5rem;
+            bottom: 1.5rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .header {
+        // background-color: navy;
+        width: 70rem;
+        height: 25rem;
+
+        .greeting {
+            position: relative;
+            right: 20rem;
+        }
+
+        .pronouns {
+            position: relative;
+            right: 20rem;
+        }
+
+        .developer {
+            width: 22rem;
+            position: relative;
+            left: 22rem;
+            bottom: 5rem;
+        }
+
+        .location {
+            position: relative;
+            left: 15rem;
+            bottom: 3.5rem;
+        }
     }
 }
