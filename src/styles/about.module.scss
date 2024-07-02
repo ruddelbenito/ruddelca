@@ -1,0 +1,80 @@
+@use 'variables';
+
+.header {
+    // background-color: navy;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 25rem;
+    height: 27.5rem;
+    overflow: hidden;
+
+    p {
+        padding: 1rem;
+        background-color: variables.$white;
+        width: fit-content;
+        font-family: Merriweather-Italic;
+        filter: drop-shadow(11px 5px 0 variables.$red-dark);
+        transform: rotate(-5deg);
+        margin: 0 auto;
+    }
+
+    .greeting {
+        margin-top: 1.5rem;
+        font-size: 2.5rem;
+    }
+
+    .pronouns {
+        font-size: 1rem;
+        position: relative;
+        bottom: 0.25rem;
+    }
+
+    .developer {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        width: 15rem;
+    }
+
+    .location {
+        margin: 3rem;
+        font-size: 1.5rem;
+    }
+}
+
+.textblock {
+    margin: 1.5rem auto;
+    width: 75%;
+    max-width: 35rem;
+    background-color: variables.$black;
+    padding: 1rem;
+    font-family: Merriweather-Italic;
+    color: variables.$white;
+    filter: drop-shadow(14px 14px 0 variables.$red-dark);
+
+    p {
+        margin-bottom: 0.75rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        color: variables.$white;
+        transition: 0.1s;
+
+        &:hover {
+            color: variables.$red-bright;
+        }
+    }
+}
+
+.vinylModal {
+    text-decoration: underline;
+    transition: 0.1s;
+
+    &:hover {
+        color: variables.$red-bright;
+        cursor: pointer;
+    }
+}
