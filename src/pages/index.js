@@ -29,10 +29,6 @@ export default function Home() {
             <Link href='/about'>About</Link>
             <Link href='/projects'>Projects</Link>
             <Link href='/contact'>Contact</Link>
-            <p className={styles.aboutOverlayText}>u</p>
-            <div className={styles.aboutOverlayBackground}></div>
-            <p className={styles.projectsOverlayText}>r</p>
-            <div className={styles.projectsOverlayBackground}></div>
           </div>
         </div>
       </main>

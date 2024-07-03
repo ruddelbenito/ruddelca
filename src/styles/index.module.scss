@@ -40,55 +40,13 @@
         flex-direction: column;
         margin-top: 3.5rem;
 
-        a,
-        p {
+        a {
             font-family: Akaya-Kanadaka;
             font-size: 3.5rem;
-            text-decoration: none;
-        }
-
-        a {
             -webkit-text-stroke: 0.1rem variables.$black;
             filter: drop-shadow(-2px 2px 0 variables.$red-bright);
             color: variables.$white;
-        }
-
-        p {
-            position: fixed;
-            pointer-events: none;
-        }
-
-        div {
-            background-color: white;
-            position: fixed;
-            pointer-events: none;
-        }
-
-        .aboutOverlayText {
-            left: 17.1rem;
-            top: 28.75rem;
-            z-index: 1;
-        }
-
-        .aboutOverlayBackground {
-            width: 2rem;
-            height: 2rem;
-            left: 17rem;
-            top: 30rem;
-            transform: rotate(-20deg);
-        }
-
-        .projectsOverlayText {
-            left: 12.25rem;
-            top: 32.25rem;
-            z-index: 1;
-        }
-
-        .projectsOverlayBackground {
-            width: 1.75rem;
-            height: 1.75rem;
-            left: 12rem;
-            top: 33.65rem;
+            text-decoration: none;
         }
     }
 }
