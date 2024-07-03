@@ -12,6 +12,11 @@
 
     .branding {
         filter: drop-shadow(2px 2px 0 variables.$black);
+
+        .secretLink {
+            color: variables.$white;
+            cursor: default;
+        }
     }
 
     .socials {

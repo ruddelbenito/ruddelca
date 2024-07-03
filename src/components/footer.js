@@ -9,7 +9,7 @@ export default function Footer() {
 
     return (
         <div className={styles.footer}>
-            <p className={styles.branding}>ruddel · {year}</p>
+            <p className={styles.branding}><a className={styles.secretLink} href='https://www.youtube.com/watch?v=SAxpAs1Iaec' target='_blank' rel='noreferrer'>ruddel · {year}</a></p>
             <div className={styles.socials}>
                 <a href='https://www.instagram.com/ruddel.ca/' target='_blank' rel='noreferrer'><InstagramIcon /></a>
                 <a href='https://github.com/ruddelbenito' target='_blank' rel='noreferrer'><GithubIcon /></a>
