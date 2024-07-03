@@ -80,3 +80,34 @@
         color: variables.$red-bright;
     }
 }
+
+@media only screen and (min-width: 600px) {
+    .projectSection {
+        padding: 1rem;
+        width: 80%;
+        max-width: 50rem;
+        margin: 0 auto;
+
+        .project {
+            margin: 0 auto 4rem 2rem;
+            max-width: none;
+            width: 25rem;
+            transform: rotate(-2.5deg);
+
+            &:nth-child(even) {
+                margin: 0 2rem 4rem auto;
+                transform: rotate(2.5deg);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .projectSection {
+        max-width: 65rem;
+
+        .project {
+            width: 35rem;
+        }
+    }
+}
