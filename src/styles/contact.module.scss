@@ -86,4 +86,14 @@
     color: variables.$white;
     font-family: Merriweather-Italic;
     font-size: 1rem;
+    text-align: center;
+
+    .emailRedirect {
+        color: variables.$white;
+        transition: 0.1s;
+
+        &:hover {
+            color: variables.$red-bright;
+        }
+    }
 }

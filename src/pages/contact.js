@@ -81,7 +81,7 @@ export default function Contact() {
                 </div>
             </form>
 
-            <p className={styles.altContact}>Alternatively, you can reach me via email at ruddel.benito@gmail.com</p>
+            <p className={styles.altContact}>Alternatively, you can reach me via email at <a className={styles.emailRedirect} href='mailto:ruddel.benito@gmail.com'>ruddel.benito@gmail.com</a></p>
         </>
     )
 }
