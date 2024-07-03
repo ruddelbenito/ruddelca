@@ -64,10 +64,10 @@ export default function Projects() {
                                 <p>
                                     The PSA web app is one I developed entirely on my own. My client hit me up with a
                                 </p>
-                                <div>
-                                    <p>yo can u make PSA a web app</p>
-                                    <p>to which I responded with</p>
-                                    <p>i got you</p>
+                                <div className={styles.PSADMs}>
+                                    <p className={styles.message}>yo can u make PSA a web app</p>
+                                    <p className={styles.narration}>to which I responded with:</p>
+                                    <p className={styles.response}>i got you</p>
                                 </div>
                             </div>
                             <p>

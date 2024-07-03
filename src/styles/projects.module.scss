@@ -64,22 +64,58 @@
         }
     }
 
-}
+    // PSA-Specific styling
+    .PSADMs {
+        margin-bottom: 1rem;
+        padding: 0.75rem;
+        background-color: variables.$background-dark;
+        border: 0.15rem solid darken(variables.$white, 75%);
+        border-radius: 0.5rem;
+        font-family: Arial, sans-serif;
 
-.PSAModalButton {
-    border: none;
-    background: transparent;
-    color: variables.$white;
-    font-family: Merriweather-Italic;
-    font-size: 1rem;
-    text-decoration: underline;
-    transition: 0.1s;
-    cursor: pointer;
+        p {
+            margin-bottom: 0;
+            width: fit-content;
+        }
 
-    &:hover {
-        color: variables.$red-bright;
+        .message {
+            padding: 0.5rem;
+            border-radius: 0.75rem;
+            background-color: #48464e;
+        }
+
+        .narration {
+            margin: 1rem auto;
+            font-family: Merriweather-Italic;
+        }
+
+        .response {
+            margin: 0 0 0 auto;
+            padding: 0.5rem;
+            border-radius: 0.75rem;
+            background-color: #0D83FE;
+        }
+    }
+
+    .PSAModalButton {
+        border: none;
+        background: transparent;
+        color: variables.$white;
+        font-family: Merriweather-Italic;
+        font-size: 1rem;
+        text-decoration: underline;
+        transition: 0.1s;
+        cursor: pointer;
+
+        &:hover {
+            color: variables.$red-bright;
+        }
     }
 }
+
+
+
+
 
 @media only screen and (min-width: 600px) {
     .projectSection {
