@@ -13,7 +13,7 @@ export default function Footer() {
             <div className={styles.socials}>
                 <a href='https://www.instagram.com/ruddel.ca/' target='_blank' rel='noreferrer'><InstagramIcon /></a>
                 <a href='https://github.com/ruddelbenito' target='_blank' rel='noreferrer'><GithubIcon /></a>
-                <a href='https://www.linkedin.com/in/russel-benito-284261226/' target='_blank' rel='noreferrer'><LinkedInIcon /></a>
+                <a href='https://www.linkedin.com/in/russelbenito/' target='_blank' rel='noreferrer'><LinkedInIcon /></a>
             </div>
         </div>
     )
