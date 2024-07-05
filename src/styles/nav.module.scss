@@ -14,6 +14,12 @@
     font-size: 2.75rem;
     color: variables.$white;
     filter: drop-shadow(2px 2px 0 variables.$black);
+    transition: 0.1s;
+
+    &:hover {
+        color: variables.$black;
+        filter: drop-shadow(2px 2px 0 variables.$white);
+    }
 }
 
 .icon {
@@ -53,6 +59,12 @@
     color: variables.$white;
     text-decoration: none;
     -webkit-text-stroke: 1px variables.$black;
+    transition: 0.1s;
+
+    &:hover {
+        color: variables.$black;
+        -webkit-text-stroke: 1px variables.$white;
+    }
 
     &:nth-child(2) {
         margin: 0.5rem auto;
