@@ -25,6 +25,12 @@
         a {
             display: block;
             filter: drop-shadow(1px 1px 0 variables.$red-dark);
+            transition: 0.1s;
+
+            &:hover {
+                fill: variables.$black;
+                filter: drop-shadow(2px 2px 0 variables.$white);
+            }
 
             &:nth-child(2) {
                 margin: 0 0.25rem;
