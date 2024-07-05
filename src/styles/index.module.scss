@@ -31,6 +31,14 @@
                 display: block;
                 fill: variables.$white;
                 filter: drop-shadow(2px 2px 0 variables.$red-dark);
+                transition: 0.1s;
+            }
+
+            :hover {
+                svg {
+                    fill: variables.$red-bright;
+                    filter: drop-shadow(2px 2px 0 variables.$white);
+                }
             }
         }
     }
@@ -41,12 +49,19 @@
         margin-top: 3.5rem;
 
         a {
+            padding: 0.25rem;
             font-family: Akaya-Kanadaka;
             font-size: 3.5rem;
             -webkit-text-stroke: 0.1rem variables.$black;
             filter: drop-shadow(-2px 2px 0 variables.$red-bright);
             color: variables.$white;
             text-decoration: none;
+            transition: 0.1s;
+
+            &:hover {
+                color: variables.$red-bright;
+                filter: drop-shadow(-2px 2px 0 variables.$white);
+            }
         }
     }
 }
