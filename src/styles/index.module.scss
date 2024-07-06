@@ -1,52 +1,78 @@
 @use 'variables';
 
-.home {
+.index {
     width: 100vw;
     height: 100vh;
-
     display: flex;
     align-items: center;
     justify-content: center;
-}
+    text-align: center;
 
-.content {
-    display: flex;
-    flex-direction: column;
-    width: 85vw;
+    .header {
+        font-family: Merriweather-Italic;
+        font-size: 4rem;
+        color: variables.$white;
 
-    .title {
-        margin: 1rem auto;
-        text-align: center;
-        font-size: 3rem;
+        h1 {
+            filter: drop-shadow(2px 2px 0 variables.$red-dark);
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+
+            a {
+                display: block;
+                height: 2rem;
+                margin: 0 0.2rem;
+            }
+
+            svg {
+                display: block;
+                fill: variables.$white;
+                filter: drop-shadow(2px 2px 0 variables.$red-dark);
+                transition: 0.1s;
+            }
+
+            :hover {
+                svg {
+                    fill: variables.$red-bright;
+                    filter: drop-shadow(2px 2px 0 variables.$white);
+                }
+            }
+        }
     }
 
-    .links {
+    .navigation {
         display: flex;
         flex-direction: column;
-        width: fit-content;
-        margin: 0 auto;
-        text-align: center;
-
-        font-weight: 600;
-        font-size: 1.5rem;
+        margin-top: 3.5rem;
 
         a {
+            padding: 0.25rem;
+            font-family: Akaya-Kanadaka;
+            font-size: 3.5rem;
+            -webkit-text-stroke: 0.1rem variables.$black;
+            filter: drop-shadow(-2px 2px 0 variables.$red-bright);
+            color: variables.$white;
             text-decoration: none;
-            margin: 0.75rem 0;
-            transition: 0.25s;
+            transition: 0.1s;
 
             &:hover {
-                // color: variables.$palette-2;
+                color: variables.$red-bright;
+                filter: drop-shadow(-2px 2px 0 variables.$white);
             }
         }
     }
 }
 
 @media only screen and (min-width: 600px) {
-    .links {
-        margin: 0 auto;
-        width: 50% !important;
-        flex-direction: row !important;
-        justify-content: space-around;
+    .index {
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 32.5rem;
+        }
     }
 }

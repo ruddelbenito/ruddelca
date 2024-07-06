@@ -67,7 +67,7 @@ function PSACarousel() {
                     alignItems: 'center',
                     height: 50,
                     pl: 2,
-                    bgcolor: '#5A189A',
+                    bgcolor: '#151515',
                     color: '#DFDFDF',
                 }}
             >
@@ -103,7 +103,7 @@ function PSACarousel() {
                 position="static"
                 activeStep={activeStep}
                 sx={{
-                    bgcolor: '#5A189A',
+                    bgcolor: '#151515',
                     color: '#DFDFDF'
                 }}
                 nextButton={

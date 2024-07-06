@@ -1,60 +1,39 @@
 @use 'variables';
 
 .footer {
-    width: 100%;
-    background-color: darken(variables.$background-dark, 2.5%);
-    margin-top: auto;
+    background-color: variables.$red-dark;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: variables.$white;
+    fill: variables.$white;
+    font-family: Merriweather-Italic;
+    padding: 0.75rem;
 
-    .footerContent {
-        padding: 1rem;
-        text-align: center;
-        align-items: center;
+    .branding {
+        filter: drop-shadow(2px 2px 0 variables.$black);
 
-        display: flex;
-        justify-content: space-between;
-
-        font-weight: 600;
-
-        p:hover {
+        .secretLink {
+            color: variables.$white;
             cursor: default;
         }
-
-        .icons {
-            a:not(:first-child):not(:last-child) {
-                margin: 0 0.5rem;
-            }
-
-            .instagram,
-            .github,
-            .linkedin {
-                fill: variables.$content-dark;
-                transition: 0.2s;
-
-                &:hover {
-                    fill: variables.$content-dark-hover;
-                }
-            }
-        }
     }
-}
 
-// Media Queries
+    .socials {
+        display: flex;
 
-@media (prefers-color-scheme: light) {
-    .footer {
-        background-color: darken(variables.$background-light, 10%);
+        a {
+            display: block;
+            filter: drop-shadow(1px 1px 0 variables.$red-dark);
+            transition: 0.1s;
 
-        .footerContent {
-            color: variables.$palette-5;
+            &:hover {
+                fill: variables.$black;
+                filter: drop-shadow(2px 2px 0 variables.$white);
+            }
 
-            .instagram,
-            .github,
-            .linkedin {
-                fill: variables.$palette-5 !important;
-
-                &:hover {
-                    fill: variables.$content-light-hover !important;
-                }
+            &:nth-child(2) {
+                margin: 0 0.25rem;
             }
         }
     }

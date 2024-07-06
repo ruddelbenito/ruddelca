@@ -1,8 +1,8 @@
 import { useForm } from 'react-hook-form'
 import { useState, useRef } from 'react'
 import { Alert, AlertTitle } from '@mui/material'
-import styles from '@/styles/contact.module.scss'
 import emailjs from '@emailjs/browser'
+import styles from '@/styles/contact.module.scss'
 
 export default function Contact() {
     const { register, handleSubmit, errors, reset } = useForm();
@@ -44,7 +44,7 @@ export default function Contact() {
 
     return (
         <>
-            <h1>Contact</h1>
+            <h1 className={styles.title}>Contact</h1>
 
             {showAlert ?
                 <Alert className={styles.alert} severity={alertSeverity} icon={false}>
@@ -56,26 +56,32 @@ export default function Contact() {
             }
 
             <form
-                className={styles.contactForm}
+                className={styles.form}
                 onSubmit={handleSubmit(onSubmit, onError)}
                 ref={form}
             >
-                <label className={styles.label}>Name</label>
-                <input className={styles.input} name='from_name' {...register('from_name', { required: true })}></input>
+                <div className={styles.name}>
+                    <label>Name</label>
+                    <input name='from_name' {...register('from_name', { required: true })}></input>
+                </div>
 
-                <label className={styles.label}>Email</label>
-                <input className={styles.input} name='email' {...register('email', { required: true, pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/ })}></input>
+                <div className={styles.email}>
+                    <label>Email</label>
+                    <input name='email' {...register('email', { required: true, pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/ })}></input>
+                </div>
 
-                <label className={styles.label}>Message</label>
-                <textarea className={styles.input} name='message' {...register('message', { required: true })} />
+                <div className={styles.message}>
+                    <label>Message</label>
+                    <textarea name='message' {...register('message', { required: true })} />
+                </div>
 
                 <div className={styles.buttons}>
-                    <button className={styles.buttonSend} type='submit'>Send</button>
-                    <button className={styles.buttonClear} onClick={() => onClear()}>Clear</button>
+                    <button type='submit'>SEND</button>
+                    <button onClick={() => onClear()}>CLEAR</button>
                 </div>
             </form>
 
-            <p className={styles.emailText}>Alternatively, you can reach me via email at ruddel.benito@gmail.com</p>
+            <p className={styles.altContact}>Alternatively, you can reach me via email at <a className={styles.emailRedirect} href='mailto:ruddel.benito@gmail.com'>ruddel.benito@gmail.com</a></p>
         </>
     )
 }

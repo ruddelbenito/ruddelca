@@ -15,9 +15,9 @@ export default function Nav() {
     }
 
     return (
-        <div className={styles.nav}>
-            <div className={styles.homelink}>
-                <Link href='/'>ruddel</Link>
+        <div className={styles.navbar}>
+            <div>
+                <Link className={styles.homeLink} href='/'>R</Link>
             </div>
             <Icon className={styles.icon} onClick={(e) => toggleNav()} />
             <nav className={`${styles.pageLinkGroup} ${active ? styles.active : ''}`} id='nav-links'>
